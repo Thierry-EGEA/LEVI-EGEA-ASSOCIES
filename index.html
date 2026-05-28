@@ -1,0 +1,264 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Accueil – LEVI EGEA & Associés</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+    background:#111;
+}
+
+/* HEADER */
+header{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    margin-bottom:15px;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:10px 14px;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:rgba(255,255,255,0.15);
+}
+
+/* HERO */
+.hero-section{
+    width:100%;
+    min-height:100vh;
+    background-image:url('images/Ple-social.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding:30px 15px;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.65);
+    color:white;
+    max-width:1100px;
+    margin:auto;
+    padding:40px;
+    border-radius:12px;
+}
+
+/* TITRES */
+.main-title{
+    text-align:center;
+    font-size:clamp(32px, 5vw, 50px);
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    font-size:clamp(18px, 3vw, 22px);
+    margin-bottom:40px;
+}
+
+/* BLOC CONTENU */
+.content-block{
+    display:flex;
+    align-items:stretch;
+    gap:25px;
+}
+
+/* IMAGE */
+.image-container{
+    flex:0 0 38%;
+    display:flex;
+}
+
+.image-container img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+/* TEXTE */
+.text-content{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.text-content h2{
+    color:white;
+    text-align:center;
+    text-decoration:underline;
+    margin-bottom:25px;
+    font-size:clamp(26px, 4vw, 32px);
+}
+
+.text-content p{
+    font-size:18px;
+    text-align:justify;
+}
+
+.text-content a{
+    color:white;
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:14px;
+}
+
+/* VERSION MOBILE */
+@media (max-width:768px){
+
+    .overlay{
+        padding:25px;
+    }
+
+    .content-block{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .image-container{
+        width:100%;
+    }
+
+    .image-container img{
+        width:100%;
+        height:300px;
+        object-fit:cover;
+    }
+
+    .text-content p{
+        font-size:16px;
+        text-align:left;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:8px;
+    }
+
+    nav a{
+        display:block;
+        width:100%;
+        text-align:center;
+    }
+
+    footer{
+        padding:15px;
+        font-size:13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Accueil</h1>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="competences.html">Compétences</a>
+        <a href="dossier.html">Votre premier rendez-vous</a>
+        <a href="Honoraires.html">Nos honoraires</a>
+        <a href="equipe.html">Équipe</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero-section">
+
+    <div class="overlay">
+
+        <h1 class="main-title">
+            LEVI EGEA & Associés
+        </h1>
+
+        <p class="subtitle">
+            Cabinet d’avocats à Montauban
+        </p>
+
+        <div class="content-block">
+
+            <div class="image-container">
+                <img src="images/Th_mis.jpg"
+                     alt="Statue Thémis">
+            </div>
+
+            <div class="text-content">
+
+                <h2>Accueil</h2>
+
+                <p>
+                    Parmi les plus anciens cabinets d'avocats de Montauban, le Cabinet LEVI EGEA & Associés regroupe plusieurs avocats et juristes.<br><br>
+
+                    Installé au cœur du centre-ville historique de Montauban (Occitanie), l’équipe du Cabinet LEVI EGEA & Associés saura vous accompagner dans toutes vos démarches juridiques, de la simple consultation au dossier contentieux, en passant par la rédaction d’actes juridiques.<br><br>
+
+                    Dans le cadre d’une relation privilégiée d’échange avec les clients, qu’ils soient particuliers, professionnels ou institutionnels, les membres du cabinet placent les valeurs d’honnêteté, de confiance et de pugnacité au cœur de leur exercice, afin de vous apporter le conseil et la défense recherchés.<br><br>
+
+                    Afin de proposer une prestation la plus complète possible, le Cabinet LEVI EGEA & Associés s’est entouré de professionnels spécialisés, notamment d’experts, capables d’apporter leurs compétences techniques dans différents domaines.<br><br>
+
+                    Droit civil ou commercial, droit de la famille, droit immobilier, droit pénal, droit des sociétés ou droit du travail, notre équipe multidisciplinaire est à même de vous représenter et de faire valoir vos droits.<br><br>
+
+                    Le Cabinet LEVI EGEA & Associés vous accueille sur rendez-vous du lundi au vendredi de 9h00 à 12h00 et de 14h00 à 18h00.<br><br>
+
+                    Dans un souci d'efficacité et afin de ne pas encombrer le standard, nous vous demandons de contacter le cabinet en priorité par mail à l’adresse :
+                    <strong>cabinet@slea-avocats.fr</strong>
+                    lors du premier échange.<br><br>
+
+                    Par la suite, merci de privilégier les échanges électroniques via l’adresse du collaborateur en charge de votre dossier, disponible dans l’onglet
+                    <a href="contact.html">Contact</a>.<br><br>
+
+                    L’accueil téléphonique est ouvert principalement pour la prise de rendez-vous du lundi au vendredi de 09h00 à 12h00 et de 15h00 à 17h00.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © LEVI EGEA & Associés - 20, rue Michelet 82000 MONTAUBAN -
+    +33(0)5 63 20 00 61 - cabinet@slea-avocats.fr
+</footer>
+
+</body>
+</html>
+```
