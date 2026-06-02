@@ -332,29 +332,56 @@ Générer le dossier PDF
 <script>
 window.addEventListener('load', function () {
 
-    console.log("Page chargée");
-    console.log("jspdf =", window.jspdf);
-
     const form = document.getElementById('contactForm');
 
     form.addEventListener('submit', function (e) {
 
         e.preventDefault();
 
-        alert("Test bouton");
-
-        if (!window.jspdf) {
-            alert("jsPDF non chargé");
-            return;
-        }
-
         const { jsPDF } = window.jspdf;
-
         const pdf = new jsPDF();
 
-        pdf.text("Test PDF", 20, 20);
+        let y = 20;
 
-        pdf.save("test.pdf");
+        pdf.setFontSize(16);
+        pdf.text("CABINET LEVI EGEA & ASSOCIES", 20, y);
+
+        y += 10;
+
+        pdf.setFontSize(12);
+        pdf.text("Formulaire de contact", 20, y);
+
+        y += 15;
+
+        // 🔴 IMPORTANT : on lit les champs directement (PAS FormData)
+        const fields = form.querySelectorAll("input, textarea, select");
+
+        fields.forEach(field => {
+
+            if (!field.name) return;
+
+            let value = field.value;
+
+            if (!value) value = "Néant";
+
+            const text = field.name + " : " + value;
+
+            const lines = pdf.splitTextToSize(text, 170);
+
+            pdf.text(lines, 20, y);
+
+            y += lines.length * 7;
+
+            if (y > 270) {
+                pdf.addPage();
+                y = 20;
+            }
+        });
+
+        const nom = document.querySelector('[name="nom"]').value || "client";
+
+        pdf.save("Dossier_" + nom + ".pdf");
+
     });
 
 });
