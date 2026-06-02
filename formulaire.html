@@ -333,7 +333,12 @@ Générer le dossier PDF
 window.addEventListener('load', function () {
 
     const form = document.getElementById('contactForm');
+const select = document.getElementById('personne');
+const mail = document.getElementById('mailContact');
 
+select.addEventListener('change', function () {
+    mail.value = this.value;
+});
     form.addEventListener('submit', function (e) {
 
         e.preventDefault();
