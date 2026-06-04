@@ -147,6 +147,12 @@ button:hover{
 <h1>Formulaire de contact</h1>
 <p class="subtitle">Cabinet LEVI EGEA & Associés</p>
 
+<p class="subtitle">
+Bien vouloir compléter le formulaire et le faire parvenir par mail.<br>
+Compléter les champs. En l’absence d’éléments, indiquer
+<strong>« Néant »</strong> ou <strong>« Non concerné »</strong>.
+</p>
+
 <form id="contactForm">
 
 <!-- DESTINATAIRE -->
@@ -154,15 +160,24 @@ button:hover{
 <label>Choix de la personne</label>
 <select id="personne" name="destinataire" required>
 <option value="">Choisir</option>
-<option value="cabinet@slea-avocats.fr">Maître Thierry EGEA</option>
-<option value="cabinet@slea-avocats.fr">Maître Jean-Louis LEVI</option>
-<option value="g.boggia@slea-avocats.fr">Maître Geoffroy BOGGIA</option>
-<option value="f.peronnet@slea-avocats.fr">Maître Fabien PERONNET</option>
-<option value="a.gt@slea-avocats.fr">Aurélien Guillemot</option>
+<option value="cabinet@slea-avocats.fr">
+Maître Thierry EGEA
+</option>
+<option value="cabinet@slea-avocats.fr">
+Maître Jean-Louis LEVI
+</option>
+<option value="g.boggia@slea-avocats.fr">
+Maître Geoffroy BOGGIA
+</option>
+<option value="f.peronnet@slea-avocats.fr">
+Maître Fabien PERONNET
+</option>
+<option value="a.gt@slea-avocats.fr">
+Aurélien Guillemot
+</option>
 </select>
 </div>
 
-<!-- MAIL AFFICHÉ -->
 <div class="form-group">
 <label>Email du contact</label>
 <input type="text" id="mailContact" readonly>
@@ -197,12 +212,34 @@ button:hover{
 <label>Lieu de naissance</label>
 <input type="text" name="lieu_naissance">
 </div>
+
+<div class="form-group">
+<label>Département de naissance</label>
+<input type="text" name="departement_naissance">
+</div>
 </div>
 
-<!-- CONTACT -->
+<div class="form-group">
+<label>Profession</label>
+<input type="text" name="profession">
+</div>
+
+<!-- ADRESSE -->
 <div class="form-group">
 <label>Adresse</label>
 <input type="text" name="adresse">
+</div>
+
+<div class="form-row">
+<div class="form-group">
+<label>Code postal</label>
+<input type="text" name="code_postal">
+</div>
+
+<div class="form-group">
+<label>Ville</label>
+<input type="text" name="ville">
+</div>
 </div>
 
 <div class="form-row">
@@ -217,16 +254,59 @@ button:hover{
 </div>
 </div>
 
+<!-- PARTIE ADVERSE -->
+<h2 class="section-title">Partie adverse</h2>
+
+<div class="form-row">
+<div class="form-group">
+<label>Nom</label>
+<input type="text" name="nom_adverse">
+</div>
+
+<div class="form-group">
+<label>Prénom</label>
+<input type="text" name="prenom_adverse">
+</div>
+</div>
+
+<div class="form-group">
+<label>Adresse</label>
+<input type="text" name="adresse_adverse">
+</div>
+
+<div class="form-row">
+<div class="form-group">
+<label>Code postal</label>
+<input type="text" name="cp_adverse">
+</div>
+
+<div class="form-group">
+<label>Ville</label>
+<input type="text" name="ville_adverse">
+</div>
+</div>
+
+<div class="form-group">
+<label>Nom de l’avocat ou du cabinet</label>
+<input type="text" name="cabinet_adverse">
+</div>
+
+<div class="form-group">
+<label>Adresse de l’avocat</label>
+<input type="text" name="adresse_avocat">
+</div>
+
 <!-- FAITS -->
 <div class="form-group">
 <label>Résumé des faits</label>
 <textarea name="faits"></textarea>
 </div>
 
-<button type="submit">Générer le PDF</button>
+<button type="submit">
+Générer le PDF
+</button>
 
 </form>
-
 </div>
 </section>
 
