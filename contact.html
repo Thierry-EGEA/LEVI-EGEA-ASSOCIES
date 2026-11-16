@@ -1,275 +1,173 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Contact – LEVI EGEA & Associés</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, sans-serif;
-    background:#111;
-    color:white;
-    line-height:1.6;
-}
-
-/* HEADER */
-header{
-    background:#111;
-    text-align:center;
-    padding:20px;
-}
-
-header h1{
-    margin-bottom:15px;
-}
-
-nav{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:12px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    padding:10px 14px;
-    border-radius:6px;
-}
-
-nav a:hover{
-    background:rgba(255,255,255,0.15);
-}
-
-/* HERO */
-.hero{
-    width:100%;
-    min-height:100vh;
-    background:url('images/Planationale.jpeg') center/cover no-repeat;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:30px 15px;
-}
-
-/* BOX */
-.container{
-    background:rgba(0,0,0,0.70);
-    width:100%;
-    max-width:900px;
-    padding:40px;
-    border-radius:12px;
-    text-align:center;
-}
-
-/* TITRES */
-h1{
-    font-size:clamp(26px,5vw,40px);
-    margin-bottom:10px;
-    color:white;
-}
-
-h2{
-    font-size:clamp(22px,4vw,32px);
-    margin:30px 0 15px;
-    text-decoration:underline;
-    color:white;
-}
-
-.subtitle{
-    font-size:clamp(18px,3vw,22px);
-    margin-bottom:30px;
-}
-
-/* TEXTES */
-p{
-    font-size:18px;
-    margin-bottom:25px;
-}
-
-a{
-    color:white;
-    word-break:break-word;
-}
-
-/* BLOCS */
-.block{
-    margin-bottom:30px;
-}
-
-/* FOOTER */
-footer{
-    background:#111;
-    text-align:center;
-    padding:20px;
-    font-size:14px;
-    color:white;
-}
-
-/* MOBILE */
-@media (max-width:768px){
-
-    .container{
-        padding:25px;
-    }
-
-    nav{
-        flex-direction:column;
-        gap:8px;
-    }
-
-    nav a{
-        width:100%;
-        text-align:center;
-    }
-
-    p{
-        font-size:16px;
-    }
-
-    footer{
-        font-size:13px;
-        padding:15px;
-    }
-}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Cabinet d’avocats à Montauban | LEVI EGEA &amp; Associés</title>
+<meta name="description" content="Cabinet LEVI EGEA &amp; Associés, 20 rue Michelet, 82000 Montauban. Tél. 05 63 20 00 61. Accueil sur rendez-vous du lundi au vendredi.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://slea-avocats.fr/contact.html">
+<meta name="theme-color" content="#3d0a22">
+<meta name="author" content="LEVI EGEA &amp; Associés">
+<meta name="geo.region" content="FR-82">
+<meta name="geo.placename" content="Montauban">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="LEVI EGEA &amp; Associés">
+<meta property="og:title" content="Contact — Cabinet d’avocats à Montauban | LEVI EGEA &amp; Associés">
+<meta property="og:description" content="Cabinet LEVI EGEA &amp; Associés, 20 rue Michelet, 82000 Montauban. Tél. 05 63 20 00 61. Accueil sur rendez-vous du lundi au vendredi.">
+<meta property="og:url" content="https://slea-avocats.fr/contact.html">
+<meta property="og:image" content="https://slea-avocats.fr/assets/img/og-levi-egea-associes.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact — Cabinet d’avocats à Montauban | LEVI EGEA &amp; Associés">
+<meta name="twitter:description" content="Cabinet LEVI EGEA &amp; Associés, 20 rue Michelet, 82000 Montauban. Tél. 05 63 20 00 61. Accueil sur rendez-vous du lundi au vendredi.">
+<meta name="twitter:image" content="https://slea-avocats.fr/assets/img/og-levi-egea-associes.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["LegalService","LocalBusiness"],"@id":"https://slea-avocats.fr/#cabinet","name":"LEVI EGEA & Associés","alternateName":["Cabinet LEVI EGEA","SLEA Avocats","Levi Egea et Associés"],"description":"Cabinet d’avocats à Montauban (Tarn-et-Garonne) : droit des affaires, droit civil, droit commercial, droit de la famille, droit pénal et droit du travail.","url":"https://slea-avocats.fr/","logo":"https://slea-avocats.fr/assets/img/apple-touch-icon.png","image":"https://slea-avocats.fr/assets/img/og-levi-egea-associes.jpg","telephone":"+33563200061","email":"cabinet@slea-avocats.fr","priceRange":"Sur devis — convention d’honoraires","address":{"@type":"PostalAddress","streetAddress":"20 rue Michelet","postalCode":"82000","addressLocality":"Montauban","addressRegion":"Occitanie","addressCountry":"FR"},"hasMap":"https://www.google.com/maps/search/?api=1&query=20+rue+Michelet+82000+Montauban","areaServed":[{"@type":"City","name":"Montauban"},{"@type":"AdministrativeArea","name":"Tarn-et-Garonne"},{"@type":"AdministrativeArea","name":"Occitanie"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"12:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"14:00","closes":"18:00"}],"knowsAbout":["Droit des affaires","Droit civil","Droit commercial","Droit de la famille","Droit pénal","Droit social"],"knowsLanguage":["fr"]},{"@type":"WebSite","@id":"https://slea-avocats.fr/#site","url":"https://slea-avocats.fr/","name":"LEVI EGEA & Associés","inLanguage":"fr-FR","publisher":{"@id":"https://slea-avocats.fr/#cabinet"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://slea-avocats.fr/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://slea-avocats.fr/contact.html"}]}]}</script>
 </head>
-
 <body>
-
-<header>
-    <h1>Contact</h1>
-
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="competences.html">Compétences</a>
-        <a href="dossier.html">Votre premier rendez-vous</a>
-        <a href="Honoraires.html">Nos honoraires</a>
-        <a href="equipe.html">Équipe</a>
-        <a href="contact.html">Contact</a>
-	<a href="formulaire.html">Formulaire de contact</a>
-    </nav>
-</header>
-
-<section class="hero">
-
-<div class="container">
-
-    <h1>Cabinet LEVI EGEA & Associés</h1>
-
-    <p class="subtitle">Cabinet d’avocats à Montauban</p>
-
-    <h2>Contact</h2>
-
-    <p>
-        20, rue Michelet<br>
-        82000 MONTAUBAN<br><br>
-        +33 (0)5 63 20 00 61<br>
-	Du lundi au vendredi : <br>
-	De 09h00 à 12h00 et de 15h00 à 17h00<br><br>
-	En cas d'absence de votre interlocuteur<br>
-	Bien vouloir lui envoyer un mail avec :<br>
-	- Vos coordonnées<br>
-	- L'heure de votre appel<br>
-	- Le motif de votre appel<br>
-    </p>
-
-    <p>
-        Contact :<br>
-        <a href="mailto:cabinet@slea-avocats.fr">cabinet@slea-avocats.fr</a>
-    </p>
-
-    <p>
-        Comptabilité :<br>
-        <a href="mailto:compta@slea-avocats.fr">compta@slea-avocats.fr</a>
-    </p>
-
-    <h2>Avocats</h2>
-
-    <div class="block">
-        <p><strong>Maître Thierry EGEA</strong><br>
-        Pôle affaires et commercial<br>
-        <a href="mailto:cabinet@slea-avocats.fr">cabinet@slea-avocats.fr</a></p>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-items">
+      <span class="hide-sm">20, rue Michelet · 82000 Montauban</span>
+      <span class="hide-sm">Du lundi au vendredi, sur rendez-vous</span>
     </div>
-
-    <div class="block">
-        <p><strong>Maître Jean-Lou LEVI</strong><br>
-        Pôle pénal<br>
-        <a href="mailto:cabinet@slea-avocats.fr">cabinet@slea-avocats.fr</a></p>
+    <div class="topbar-items">
+      <a href="tel:+33563200061">05 63 20 00 61</a>
+      <a href="mailto:cabinet@slea-avocats.fr">cabinet@slea-avocats.fr</a>
     </div>
-
-    <div class="block">
-        <p><strong>Maître Geoffroy BOGGIA</strong><br>
-        Droit du travail, sécurité sociale et droit civil<br>
-        <a href="mailto:g.boggia@slea-avocats.fr">g.boggia@slea-avocats.fr</a></p>
-    </div>
-
-    <div class="block">
-        <p><strong>Maître Fabien PERONNET</strong><br>
-        Droit pénal<br>
-        <a href="mailto:f.peronnet@slea-avocats.fr">f.peronnet@slea-avocats.fr</a></p>
-    </div>
-
-    <div class="block">
-        <p><strong>Maître Loïc GRESSEIN</strong><br>
-        Droit de la famille<br>
-        <a href="mailto:l.gressein@slea-avocats.fr">l.gressein@slea-avocats.fr</a></p>
-    </div>
-
-    <div class="block">
-        <p><strong>Maître Jean-Paul NOUHAUD</strong><br>
-        Contentieux privé<br>
-        <a href="mailto:cabinet@slea-avocats.fr">cabinet@slea-avocats.fr</a></p>
-    </div>
-
-    <h2>Juristes</h2>
-
-    <div class="block">
-        <p><strong>Aurélien GUILLEMOT-TREFFAINGUY</strong><br>
-        Droit civil, procédure civile, droit des assurances<br>
-        <a href="mailto:a.gt@slea-avocats.fr">a.gt@slea-avocats.fr</a></p>
-    </div>
-
-    <div class="block">
-        <p><strong>Majda LOUKILI BOUSCARY</strong><br>
-        Famille et pénal<br>
-        <a href="mailto:m.bouscary@slea-avocats.fr">m.bouscary@slea-avocats.fr</a></p>
-    </div>
-
-    <div class="block">
-        <p><strong>Penda CISSE</strong><br>
-        Droit des affaires<br>
-        <a href="mailto:p.cisse@slea-avocats.fr">p.cisse@slea-avocats.fr</a></p>
-    </div>
-
-    <div class="block">
-        <p><strong>Marc CHEVALLIER</strong><br>
-        Droit pénal<br>
-        <a href="mailto:m.chevallier@slea-avocats.fr">m.chevallier@slea-avocats.fr</a></p>
-    </div>
-
- <div class="block">
-        <p><strong>Marie-Line CHARPENTIER</strong><br>
-        Droit Social<br>
-        <a href="mailto:m.charpentier@slea-avocats.fr">m.charpentier@slea-avocats.fr</a></p>
-    </div>
-
+  </div>
 </div>
-
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="LEVI EGEA &amp; Associés — accueil">
+      <span class="brand-mark" aria-hidden="true">LE</span>
+      <span class="brand-text"><span class="brand-name">Levi Egea &amp; Associés</span><span class="brand-tag">Avocats · Montauban</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span></button>
+    <nav class="main-nav" id="menu" aria-label="Navigation principale">
+      <ul><li><a href="index.html">Accueil</a></li><li><a href="competences.html">Compétences</a></li><li><a href="equipe.html">Équipe</a></li><li><a href="dossier.html">Votre rendez-vous</a></li><li><a href="Honoraires.html">Honoraires</a></li><li><a href="contact.html" aria-current="page">Contact</a></li><li><a class="btn btn-primary" href="formulaire.html">Prendre contact</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="contenu">
+<section class="page-hero">
+  <div class="bg"><img src="assets/img/place-nationale-montauban.webp" alt="" width="1200" height="800" fetchpriority="high"></div>
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d’Ariane"><ol><li><a href="index.html">Accueil</a></li><li aria-current="page">Contact</li></ol></nav>
+    <p class="eyebrow light">Nous joindre</p>
+    <h1>Contacter le cabinet</h1>
+    <p class="lead">Pour un premier échange, merci de privilégier l’e-mail : votre demande sera transmise à l’avocat compétent.</p>
+  </div>
 </section>
-
-<footer>
-© LEVI EGEA & Associés – 20 rue Michelet – 82000 MONTAUBAN – +33 (0)5 63 20 00 61
+<section class="section">
+  <div class="container">
+    <div class="info-grid">
+      <div class="info-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
+        <h2>Adresse</h2>
+        <p>LEVI EGEA & Associés<br>20, rue Michelet<br>82000 Montauban</p>
+        <a class="link-arrow" href="https://www.google.com/maps/search/?api=1&query=20+rue+Michelet+82000+Montauban" target="_blank" rel="noopener">Itinéraire</a>
+      </div>
+      <div class="info-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg></div>
+        <h2>E-mail</h2>
+        <p>Premier contact :<br><a href="mailto:cabinet@slea-avocats.fr">cabinet@slea-avocats.fr</a></p>
+        <p>Comptabilité :<br><a href="mailto:compta@slea-avocats.fr">compta@slea-avocats.fr</a></p>
+      </div>
+      <div class="info-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></div>
+        <h2>Téléphone</h2>
+        <p><a href="tel:+33563200061">05 63 20 00 61</a></p>
+        <p>Du lundi au vendredi<br>9 h – 12 h et 15 h – 17 h<br><span class="form-note">principalement pour la prise de rendez-vous</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section-sand">
+  <div class="container split">
+    <div class="reveal">
+      <p class="eyebrow">Horaires</p>
+      <h2>Accueil sur rendez-vous</h2>
+      <p>Le cabinet vous reçoit sur rendez-vous du lundi au vendredi, de <strong>9 h à 12 h</strong> et de <strong>14 h à 18 h</strong>.</p>
+      <p>Après le premier échange, merci de privilégier les échanges électroniques avec le collaborateur en charge de votre dossier.</p>
+      <div class="callout">
+        <p><strong>En cas d’absence de votre interlocuteur</strong>, adressez-lui un e-mail précisant vos coordonnées, l’heure de votre appel et son motif.</p>
+      </div>
+    </div>
+    <div class="split-media-wrap reveal"><div class="split-media wide"><img src="assets/img/cabinet-avocats-montauban-facade.webp" alt="Façade en brique du centre historique de Montauban" width="1120" height="840" loading="lazy"></div></div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal"><p class="eyebrow">Annuaire</p><h2>Écrire directement à un membre de l’équipe</h2></div>
+    <table class="directory reveal">
+      <thead><tr><th>Nom</th><th>Domaine</th><th>E-mail</th></tr></thead>
+      <tbody><tr><td>Maître Thierry EGEA</td><td>Pôle affaires et commercial</td><td><a href="mailto:cabinet@slea-avocats.fr">cabinet@slea-avocats.fr</a></td></tr><tr><td>Maître Jean-Lou LEVI</td><td>Pôle pénal</td><td><a href="mailto:cabinet@slea-avocats.fr">cabinet@slea-avocats.fr</a></td></tr><tr><td>Maître Geoffroy BOGGIA</td><td>Droit du travail, droit de la sécurité sociale et droit civil</td><td><a href="mailto:g.boggia@slea-avocats.fr">g.boggia@slea-avocats.fr</a></td></tr><tr><td>Maître Fabien PERONNET</td><td>Droit civil, commercial et pénal</td><td><a href="mailto:f.peronnet@slea-avocats.fr">f.peronnet@slea-avocats.fr</a></td></tr><tr><td>Maître Loïc GRESSEIN</td><td>Droit de la famille</td><td><a href="mailto:l.gressein@slea-avocats.fr">l.gressein@slea-avocats.fr</a></td></tr><tr><td>Maître Jean-Paul NOUHAUD</td><td>Contentieux privé</td><td><a href="mailto:cabinet@slea-avocats.fr">cabinet@slea-avocats.fr</a></td></tr><tr><td>Aurélien GUILLEMOT-TREFFAINGUY</td><td>Droit civil, procédure civile, droit des assurances</td><td><a href="mailto:a.gt@slea-avocats.fr">a.gt@slea-avocats.fr</a></td></tr><tr><td>Majda LOUKILI BOUSCARY</td><td>Pôle famille et droit pénal</td><td><a href="mailto:m.bouscary@slea-avocats.fr">m.bouscary@slea-avocats.fr</a></td></tr><tr><td>Penda CISSE</td><td>Droit des affaires</td><td><a href="mailto:p.cisse@slea-avocats.fr">p.cisse@slea-avocats.fr</a></td></tr><tr><td>Marc CHEVALLIER</td><td>Droit pénal</td><td><a href="mailto:m.chevallier@slea-avocats.fr">m.chevallier@slea-avocats.fr</a></td></tr><tr><td>Marie-Line CHARPENTIER</td><td>Droit social</td><td><a href="mailto:m.charpentier@slea-avocats.fr">m.charpentier@slea-avocats.fr</a></td></tr></tbody>
+    </table>
+  </div>
+</section>
+<section class="cta-band">
+  <div class="container">
+    <div>
+      <h2>Préparer votre dossier</h2>
+      <p>Notre formulaire génère une fiche récapitulative à transmettre à votre interlocuteur.</p>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn-gold" href="formulaire.html">Prendre contact</a>
+      <a class="btn btn-ghost" href="tel:+33563200061">05 63 20 00 61</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div>
+      <a class="brand" href="index.html" aria-label="LEVI EGEA &amp; Associés — accueil">
+        <span class="brand-mark" aria-hidden="true">LE</span>
+        <span class="brand-text"><span class="brand-name">Levi Egea &amp; Associés</span><span class="brand-tag">Avocats · Montauban</span></span>
+      </a>
+      <p class="footer-about">L’un des plus anciens cabinets d’avocats de Montauban, au service des particuliers, des professionnels et des institutions.</p>
+    </div>
+    <div>
+      <h2>Compétences</h2>
+      <ul><li><a href="avocat-droit-des-affaires-montauban.html">Droit des affaires</a></li><li><a href="avocat-droit-civil-montauban.html">Droit civil</a></li><li><a href="avocat-droit-commercial-montauban.html">Droit commercial</a></li><li><a href="avocat-droit-de-la-famille-montauban.html">Droit de la famille</a></li><li><a href="avocat-droit-penal-montauban.html">Droit pénal</a></li><li><a href="avocat-droit-du-travail-montauban.html">Droit social</a></li></ul>
+    </div>
+    <div>
+      <h2>Le cabinet</h2>
+      <ul>
+        <li><a href="equipe.html">L’équipe</a></li>
+        <li><a href="dossier.html">Votre premier rendez-vous</a></li>
+        <li><a href="Honoraires.html">Honoraires</a></li>
+        <li><a href="formulaire.html">Formulaire de contact</a></li>
+        <li><a href="images/Guide.pdf">Guide pratique (PDF)</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Nous trouver</h2>
+      <address>
+        LEVI EGEA & Associés<br>20, rue Michelet<br>82000 Montauban<br><br>
+        <a href="tel:+33563200061">05 63 20 00 61</a><br>
+        <a href="mailto:cabinet@slea-avocats.fr">cabinet@slea-avocats.fr</a>
+      </address>
+      <p style="margin-top:1rem">Lundi – vendredi<br>9 h – 12 h · 14 h – 18 h, sur rendez-vous</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© <span id="year">2026</span> LEVI EGEA & Associés — Cabinet d’avocats à Montauban</span>
+      <span><a href="mentions-legales.html">Mentions légales</a> · <a href="contact.html">Contact</a></span>
+    </div>
+  </div>
 </footer>
-
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>

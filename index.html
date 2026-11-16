@@ -1,265 +1,230 @@
-```html
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Accueil – LEVI EGEA & Associés</title>
-<link rel="stylesheet" href="style.css">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, sans-serif;
-    line-height:1.6;
-    background:#111;
-}
-
-/* HEADER */
-header{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-header h1{
-    margin-bottom:15px;
-}
-
-nav{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:12px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    padding:10px 14px;
-    border-radius:6px;
-    transition:0.3s;
-}
-
-nav a:hover{
-    background:rgba(255,255,255,0.15);
-}
-
-/* HERO */
-.hero-section{
-    width:100%;
-    min-height:100vh;
-    background-image:url('images/Ple-social.jpg');
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    padding:30px 15px;
-}
-
-.overlay{
-    background:rgba(0,0,0,0.65);
-    color:white;
-    max-width:1100px;
-    margin:auto;
-    padding:40px;
-    border-radius:12px;
-}
-
-/* TITRES */
-.main-title{
-    text-align:center;
-    font-size:clamp(32px, 5vw, 50px);
-    margin-bottom:10px;
-}
-
-.subtitle{
-    text-align:center;
-    font-size:clamp(18px, 3vw, 22px);
-    margin-bottom:40px;
-}
-
-/* BLOC CONTENU */
-.content-block{
-    display:flex;
-    align-items:stretch;
-    gap:25px;
-}
-
-/* IMAGE */
-.image-container{
-    flex:0 0 38%;
-    display:flex;
-}
-
-.image-container img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    border-radius:8px;
-}
-
-/* TEXTE */
-.text-content{
-    flex:1;
-    display:flex;
-    flex-direction:column;
-}
-
-.text-content h2{
-    color:white;
-    text-align:center;
-    text-decoration:underline;
-    margin-bottom:25px;
-    font-size:clamp(26px, 4vw, 32px);
-}
-
-.text-content p{
-    font-size:18px;
-    text-align:justify;
-}
-
-.text-content a{
-    color:white;
-}
-
-/* FOOTER */
-footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:20px;
-    font-size:14px;
-}
-
-/* VERSION MOBILE */
-@media (max-width:768px){
-
-    .overlay{
-        padding:25px;
-    }
-
-    .content-block{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .image-container{
-        width:100%;
-    }
-
-    .image-container img{
-        width:100%;
-        height:300px;
-        object-fit:cover;
-    }
-
-    .text-content p{
-        font-size:16px;
-        text-align:left;
-    }
-
-    nav{
-        flex-direction:column;
-        gap:8px;
-    }
-
-    nav a{
-        display:block;
-        width:100%;
-        text-align:center;
-    }
-
-    footer{
-        padding:15px;
-        font-size:13px;
-    }
-}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avocat à Montauban — Cabinet LEVI EGEA &amp; Associés</title>
+<meta name="description" content="Cabinet d’avocats historique de Montauban : affaires, civil, commercial, famille, pénal, travail. Conseil et défense des particuliers et entreprises.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://slea-avocats.fr/">
+<meta name="theme-color" content="#3d0a22">
+<meta name="author" content="LEVI EGEA &amp; Associés">
+<meta name="geo.region" content="FR-82">
+<meta name="geo.placename" content="Montauban">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="LEVI EGEA &amp; Associés">
+<meta property="og:title" content="Avocat à Montauban — Cabinet LEVI EGEA &amp; Associés">
+<meta property="og:description" content="Cabinet d’avocats historique de Montauban : affaires, civil, commercial, famille, pénal, travail. Conseil et défense des particuliers et entreprises.">
+<meta property="og:url" content="https://slea-avocats.fr/">
+<meta property="og:image" content="https://slea-avocats.fr/assets/img/og-levi-egea-associes.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Avocat à Montauban — Cabinet LEVI EGEA &amp; Associés">
+<meta name="twitter:description" content="Cabinet d’avocats historique de Montauban : affaires, civil, commercial, famille, pénal, travail. Conseil et défense des particuliers et entreprises.">
+<meta name="twitter:image" content="https://slea-avocats.fr/assets/img/og-levi-egea-associes.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["LegalService","LocalBusiness"],"@id":"https://slea-avocats.fr/#cabinet","name":"LEVI EGEA & Associés","alternateName":["Cabinet LEVI EGEA","SLEA Avocats","Levi Egea et Associés"],"description":"Cabinet d’avocats à Montauban (Tarn-et-Garonne) : droit des affaires, droit civil, droit commercial, droit de la famille, droit pénal et droit du travail.","url":"https://slea-avocats.fr/","logo":"https://slea-avocats.fr/assets/img/apple-touch-icon.png","image":"https://slea-avocats.fr/assets/img/og-levi-egea-associes.jpg","telephone":"+33563200061","email":"cabinet@slea-avocats.fr","priceRange":"Sur devis — convention d’honoraires","address":{"@type":"PostalAddress","streetAddress":"20 rue Michelet","postalCode":"82000","addressLocality":"Montauban","addressRegion":"Occitanie","addressCountry":"FR"},"hasMap":"https://www.google.com/maps/search/?api=1&query=20+rue+Michelet+82000+Montauban","areaServed":[{"@type":"City","name":"Montauban"},{"@type":"AdministrativeArea","name":"Tarn-et-Garonne"},{"@type":"AdministrativeArea","name":"Occitanie"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"12:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"14:00","closes":"18:00"}],"knowsAbout":["Droit des affaires","Droit civil","Droit commercial","Droit de la famille","Droit pénal","Droit social"],"knowsLanguage":["fr"]},{"@type":"WebSite","@id":"https://slea-avocats.fr/#site","url":"https://slea-avocats.fr/","name":"LEVI EGEA & Associés","inLanguage":"fr-FR","publisher":{"@id":"https://slea-avocats.fr/#cabinet"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Comment prendre rendez-vous avec un avocat du cabinet ?","acceptedAnswer":{"@type":"Answer","text":"Pour un premier échange, contactez le cabinet en priorité par e-mail à cabinet@slea-avocats.fr ou via notre formulaire de contact, en précisant l’objet de votre demande. L’accueil téléphonique (05 63 20 00 61) est ouvert du lundi au vendredi de 9 h à 12 h et de 15 h à 17 h, principalement pour la prise de rendez-vous."}},{"@type":"Question","name":"Quels sont les domaines d’intervention du cabinet ?","acceptedAnswer":{"@type":"Answer","text":"Le cabinet intervient en droit des affaires, droit civil et immobilier, droit commercial, droit de la famille, droit pénal et droit du travail, en conseil comme en contentieux."}},{"@type":"Question","name":"Mes frais d’avocat peuvent-ils être pris en charge ?","acceptedAnswer":{"@type":"Answer","text":"Les honoraires peuvent être pris en charge, en tout ou partie, par une assurance protection juridique souvent incluse dans un contrat d’assurance habitation ou une carte bancaire. Vous restez libre de choisir votre avocat."}}]}]}</script>
 </head>
-
 <body>
-
-<header>
-    <h1>Accueil</h1>
-
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="competences.html">Compétences</a>
-        <a href="dossier.html">Votre premier rendez-vous</a>
-        <a href="Honoraires.html">Nos honoraires</a>
-        <a href="equipe.html">Équipe</a>
-        <a href="contact.html">Contact</a>
-		<a href="formulaire.html">Formulaire de contact</a>
-    </nav>
-</header>
-
-<section class="hero-section">
-
-    <div class="overlay">
-
-        <h1 class="main-title">
-            LEVI EGEA & Associés
-        </h1>
-
-        <p class="subtitle">
-            Cabinet d’avocats à Montauban
-        </p>
-
-        <div class="content-block">
-
-            <div class="image-container">
-                <img src="images/Th_mis.jpg"
-                     alt="Statue Thémis">
-            </div>
-
-            <div class="text-content">
-
-                <h2>Accueil</h2>
-
-                <p>
-                    Parmi les plus anciens cabinets d'avocats de Montauban, le Cabinet LEVI EGEA & Associés regroupe plusieurs avocats et juristes.<br><br>
-
-                    Installé au cœur du centre-ville historique de Montauban (Occitanie), l’équipe du Cabinet LEVI EGEA & Associés saura vous accompagner dans toutes vos démarches juridiques, de la simple consultation au dossier contentieux, en passant par la rédaction d’actes juridiques.<br><br>
-
-                    Dans le cadre d’une relation privilégiée d’échange avec les clients, qu’ils soient particuliers, professionnels ou institutionnels, les membres du cabinet placent les valeurs d’honnêteté, de confiance et de pugnacité au cœur de leur exercice, afin de vous apporter le conseil et la défense recherchés.<br><br>
-
-                    Afin de proposer une prestation la plus complète possible, le Cabinet LEVI EGEA & Associés s’est entouré de professionnels spécialisés, notamment d’experts, capables d’apporter leurs compétences techniques dans différents domaines.<br><br>
-
-                    Droit civil ou commercial, droit de la famille, droit immobilier, droit pénal, droit des sociétés ou droit du travail, notre équipe multidisciplinaire est à même de vous représenter et de faire valoir vos droits.<br><br>
-
-                    Le Cabinet LEVI EGEA & Associés vous accueille sur rendez-vous du lundi au vendredi de 9h00 à 12h00 et de 14h00 à 18h00.<br><br>
-
-                    Dans un souci d'efficacité et afin de ne pas encombrer le standard, nous vous demandons de contacter le cabinet en priorité par mail à l’adresse :
-                    <strong>cabinet@slea-avocats.fr</strong>
-                    lors du premier échange.<br><br>
-
-                    Par la suite, merci de privilégier les échanges électroniques via l’adresse du collaborateur en charge de votre dossier, disponible dans l’onglet
-                    <a href="contact.html">Contact</a>.<br><br>
-
-                    L’accueil téléphonique est ouvert principalement pour la prise de rendez-vous du lundi au vendredi de 09h00 à 12h00 et de 15h00 à 17h00.
-                </p>
-
-            </div>
-
-        </div>
-
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-items">
+      <span class="hide-sm">20, rue Michelet · 82000 Montauban</span>
+      <span class="hide-sm">Du lundi au vendredi, sur rendez-vous</span>
     </div>
-
+    <div class="topbar-items">
+      <a href="tel:+33563200061">05 63 20 00 61</a>
+      <a href="mailto:cabinet@slea-avocats.fr">cabinet@slea-avocats.fr</a>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="LEVI EGEA &amp; Associés — accueil">
+      <span class="brand-mark" aria-hidden="true">LE</span>
+      <span class="brand-text"><span class="brand-name">Levi Egea &amp; Associés</span><span class="brand-tag">Avocats · Montauban</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span></button>
+    <nav class="main-nav" id="menu" aria-label="Navigation principale">
+      <ul><li><a href="index.html" aria-current="page">Accueil</a></li><li><a href="competences.html">Compétences</a></li><li><a href="equipe.html">Équipe</a></li><li><a href="dossier.html">Votre rendez-vous</a></li><li><a href="Honoraires.html">Honoraires</a></li><li><a href="contact.html">Contact</a></li><li><a class="btn btn-primary" href="formulaire.html">Prendre contact</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="contenu">
+<section class="hero">
+  <div class="hero-wrap">
+    <div class="container hero-grid">
+      <div class="hero-content on-dark">
+        <p class="eyebrow">Cabinet d’avocats · Montauban</p>
+        <h1>Levi Egea &amp; Associés, <em>avocats à Montauban</em></h1>
+        <p class="lead">Parmi les plus anciens cabinets d’avocats de Montauban, nous conseillons et défendons particuliers, professionnels et institutions, de la simple consultation au dossier contentieux.</p>
+        <div class="btn-row">
+          <a class="btn btn-gold" href="formulaire.html">Prendre contact</a>
+          <a class="btn btn-ghost" href="competences.html">Nos compétences</a>
+        </div>
+        <div class="hero-facts">
+          <div><strong>6</strong><span>pôles de compétences</span></div>
+          <div><strong>11</strong><span>avocats et juristes</span></div>
+          <div><strong>82</strong><span>Montauban, Tarn-et-Garonne</span></div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <picture><img src="assets/img/place-nationale-montauban-arcades.webp" alt="Arcades de la place Nationale à Montauban, à proximité du cabinet LEVI EGEA &amp; Associés" width="792" height="1008" fetchpriority="high"></picture>
+      </div>
+    </div>
+  </div>
 </section>
 
-<footer>
-    © LEVI EGEA & Associés - 20, rue Michelet 82000 MONTAUBAN -
-    +33(0)5 63 20 00 61 - cabinet@slea-avocats.fr
-</footer>
+<section class="section">
+  <div class="container split">
+    <div class="split-media-wrap reveal">
+      <div class="split-media"><img src="assets/img/themis-statue-justice.webp" alt="Statue de Thémis, symbole de la justice" width="900" height="1125" loading="lazy"></div>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">Le cabinet</p>
+      <h2>Une tradition d’exigence au cœur de Montauban</h2>
+      <p>Installé dans le centre-ville historique de Montauban, le cabinet LEVI EGEA &amp; Associés réunit plusieurs avocats et juristes. Notre équipe vous accompagne dans toutes vos démarches juridiques : consultation, rédaction d’actes, négociation et contentieux.</p>
+      <p>Afin de proposer une prestation complète, le cabinet s’est entouré de professionnels spécialisés, notamment d’experts capables d’apporter leurs compétences techniques dans différents domaines.</p>
+      <div class="values">
+        <div class="value"><h3>Honnêteté</h3><p>Un conseil franc, une analyse lucide de vos chances.</p></div>
+        <div class="value"><h3>Confiance</h3><p>Une relation privilégiée et suivie avec chaque client.</p></div>
+        <div class="value"><h3>Pugnacité</h3><p>Toute notre énergie au service de vos intérêts.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section class="section section-sand">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Domaines d’intervention</p>
+      <h2>Six pôles, une même exigence</h2>
+      <p class="lead">Particuliers, professionnels ou institutions : notre équipe pluridisciplinaire vous représente et fait valoir vos droits.</p>
+    </div>
+    <div class="practice-grid"><a class="practice-card reveal" href="avocat-droit-des-affaires-montauban.html">
+  <figure><img src="assets/img/avocat-droit-des-affaires-montauban.webp" alt="Droit des affaires — cabinet d’avocats à Montauban" width="900" height="562" loading="lazy"></figure>
+  <div class="practice-body"><span class="num">01</span><h3>Droit des affaires</h3><p>Création de société, statuts, contrats et conseil juridique au quotidien des entreprises et de leurs dirigeants.</p><span class="link-arrow">Découvrir</span></div>
+</a><a class="practice-card reveal" href="avocat-droit-civil-montauban.html">
+  <figure><img src="assets/img/avocat-droit-civil-montauban.webp" alt="Droit civil — cabinet d’avocats à Montauban" width="900" height="562" loading="lazy"></figure>
+  <div class="practice-body"><span class="num">02</span><h3>Droit civil</h3><p>Conflits de voisinage, désordres après travaux, catastrophes naturelles, demandes en paiement contestées.</p><span class="link-arrow">Découvrir</span></div>
+</a><a class="practice-card reveal" href="avocat-droit-commercial-montauban.html">
+  <figure><img src="assets/img/avocat-droit-commercial-montauban.webp" alt="Droit commercial — cabinet d’avocats à Montauban" width="900" height="562" loading="lazy"></figure>
+  <div class="practice-body"><span class="num">03</span><h3>Droit commercial</h3><p>Litiges entre commerçants, recouvrement, entreprises en difficulté et représentation devant le Tribunal de commerce.</p><span class="link-arrow">Découvrir</span></div>
+</a><a class="practice-card reveal" href="avocat-droit-de-la-famille-montauban.html">
+  <figure><img src="assets/img/avocat-droit-de-la-famille-montauban.webp" alt="Droit de la famille — cabinet d’avocats à Montauban" width="900" height="562" loading="lazy"></figure>
+  <div class="practice-body"><span class="num">04</span><h3>Droit de la famille</h3><p>Divorce, résidence des enfants, pension alimentaire, successions : un accompagnement à l’écoute.</p><span class="link-arrow">Découvrir</span></div>
+</a><a class="practice-card reveal" href="avocat-droit-penal-montauban.html">
+  <figure><img src="assets/img/avocat-droit-penal-montauban.webp" alt="Droit pénal — cabinet d’avocats à Montauban" width="900" height="562" loading="lazy"></figure>
+  <div class="practice-body"><span class="num">05</span><h3>Droit pénal</h3><p>Défense des prévenus et des victimes devant le tribunal correctionnel et le tribunal de police.</p><span class="link-arrow">Découvrir</span></div>
+</a><a class="practice-card reveal" href="avocat-droit-du-travail-montauban.html">
+  <figure><img src="assets/img/avocat-droit-du-travail-montauban.webp" alt="Droit social — cabinet d’avocats à Montauban" width="900" height="562" loading="lazy"></figure>
+  <div class="practice-body"><span class="num">06</span><h3>Droit social</h3><p>Conseil aux employeurs et aux salariés, licenciement, Conseil de prud’hommes, sécurité sociale.</p><span class="link-arrow">Découvrir</span></div>
+</a></div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow light">Notre méthode</p>
+      <h2>Un accompagnement clair, de la première rencontre au dénouement</h2>
+    </div>
+    <ol class="steps reveal"><li><h3>Le premier rendez-vous</h3><p>Écoute et analyse de votre situation, au cabinet ou sur site.</p></li><li><h3>La convention d’honoraires</h3><p>Des honoraires définis par écrit, en toute transparence.</p></li><li><h3>Définir la stratégie</h3><p>Une stratégie construite et validée avec vous.</p></li><li><h3>Défendre vos intérêts</h3><p>Écritures, plaidoirie et négociation au service de votre dossier.</p></li><li><h3>Le dénouement</h3><p>Explication du résultat et suivi de l’exécution.</p></li></ol>
+    <p style="margin-top:2.5rem"><a class="btn btn-ghost" href="dossier.html">Le déroulement de votre dossier</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split reverse">
+    <div class="split-media-wrap reveal">
+      <div class="split-media wide"><img src="assets/img/bureau-cabinet-levi-egea.webp" alt="Bureau du cabinet d’avocats LEVI EGEA &amp; Associés à Montauban" width="1100" height="825" loading="lazy"></div>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">L’équipe</p>
+      <h2>Des avocats et juristes à vos côtés</h2>
+      <p>Chaque dossier est suivi par un interlocuteur dédié, entouré d’une équipe aux compétences complémentaires.</p>
+      <div class="mini-team" style="margin:1.8rem 0"><div class="mini-member"><img src="assets/img/me-thierry-egea-avocat-montauban.webp" alt="" width="64" height="64" loading="lazy"><div><strong>Maître Thierry EGEA</strong><span>Avocat associé</span></div></div><div class="mini-member"><img src="assets/img/me-jean-lou-levi-avocat-montauban.webp" alt="" width="64" height="64" loading="lazy"><div><strong>Maître Jean-Lou LEVI</strong><span>Avocat salarié</span></div></div><div class="mini-member"><img src="assets/img/me-geoffroy-boggia-avocat-montauban.webp" alt="" width="64" height="64" loading="lazy"><div><strong>Maître Geoffroy BOGGIA</strong><span>Avocat collaborateur</span></div></div><div class="mini-member"><img src="assets/img/me-fabien-peronnet-avocat-montauban.webp" alt="" width="64" height="64" loading="lazy"><div><strong>Maître Fabien PERONNET</strong><span>Avocat collaborateur</span></div></div><div class="mini-member"><img src="assets/img/me-loic-gressein-avocat-montauban.webp" alt="" width="64" height="64" loading="lazy"><div><strong>Maître Loïc GRESSEIN</strong><span>Avocat collaborateur</span></div></div><div class="mini-member"><img src="assets/img/me-jean-paul-nouhaud-avocat-montauban.webp" alt="" width="64" height="64" loading="lazy"><div><strong>Maître Jean-Paul NOUHAUD</strong><span>Avocat collaborateur</span></div></div></div>
+      <a class="link-arrow" href="equipe.html">Rencontrer toute l’équipe</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-sand">
+  <div class="container split">
+    <div class="reveal">
+      <p class="eyebrow">Honoraires</p>
+      <h2>Transparence et prise en charge</h2>
+      <p>Chaque ouverture de dossier donne lieu à une convention d’honoraires écrite, fixée une fois que l’avocat a pris connaissance de votre situation.</p>
+      <p>Vos honoraires peuvent être pris en charge, en tout ou partie, par votre assurance protection juridique. Vous restez libre de choisir votre avocat.</p>
+      <a class="btn btn-outline" href="Honoraires.html">Nos honoraires</a>
+    </div>
+    <div class="reveal">
+      <h2 style="font-size:1.9rem">Questions fréquentes</h2>
+      <div class="faq"><details><summary>Comment prendre rendez-vous avec un avocat du cabinet ?</summary><div><p>Pour un premier échange, contactez le cabinet en priorité par e-mail à cabinet@slea-avocats.fr ou via notre formulaire de contact, en précisant l’objet de votre demande. L’accueil téléphonique (05 63 20 00 61) est ouvert du lundi au vendredi de 9 h à 12 h et de 15 h à 17 h, principalement pour la prise de rendez-vous.</p></div></details><details><summary>Quels sont les domaines d’intervention du cabinet ?</summary><div><p>Le cabinet intervient en droit des affaires, droit civil et immobilier, droit commercial, droit de la famille, droit pénal et droit du travail, en conseil comme en contentieux.</p></div></details><details><summary>Mes frais d’avocat peuvent-ils être pris en charge ?</summary><div><p>Les honoraires peuvent être pris en charge, en tout ou partie, par une assurance protection juridique souvent incluse dans un contrat d’assurance habitation ou une carte bancaire. Vous restez libre de choisir votre avocat.</p></div></details></div>
+    </div>
+  </div>
+</section>
+<section class="cta-band">
+  <div class="container">
+    <div>
+      <h2>Parlons de votre situation</h2>
+      <p>Contactez-nous de préférence par e-mail à cabinet@slea-avocats.fr pour un premier échange.</p>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn-gold" href="formulaire.html">Prendre contact</a>
+      <a class="btn btn-ghost" href="tel:+33563200061">05 63 20 00 61</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div>
+      <a class="brand" href="index.html" aria-label="LEVI EGEA &amp; Associés — accueil">
+        <span class="brand-mark" aria-hidden="true">LE</span>
+        <span class="brand-text"><span class="brand-name">Levi Egea &amp; Associés</span><span class="brand-tag">Avocats · Montauban</span></span>
+      </a>
+      <p class="footer-about">L’un des plus anciens cabinets d’avocats de Montauban, au service des particuliers, des professionnels et des institutions.</p>
+    </div>
+    <div>
+      <h2>Compétences</h2>
+      <ul><li><a href="avocat-droit-des-affaires-montauban.html">Droit des affaires</a></li><li><a href="avocat-droit-civil-montauban.html">Droit civil</a></li><li><a href="avocat-droit-commercial-montauban.html">Droit commercial</a></li><li><a href="avocat-droit-de-la-famille-montauban.html">Droit de la famille</a></li><li><a href="avocat-droit-penal-montauban.html">Droit pénal</a></li><li><a href="avocat-droit-du-travail-montauban.html">Droit social</a></li></ul>
+    </div>
+    <div>
+      <h2>Le cabinet</h2>
+      <ul>
+        <li><a href="equipe.html">L’équipe</a></li>
+        <li><a href="dossier.html">Votre premier rendez-vous</a></li>
+        <li><a href="Honoraires.html">Honoraires</a></li>
+        <li><a href="formulaire.html">Formulaire de contact</a></li>
+        <li><a href="images/Guide.pdf">Guide pratique (PDF)</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Nous trouver</h2>
+      <address>
+        LEVI EGEA & Associés<br>20, rue Michelet<br>82000 Montauban<br><br>
+        <a href="tel:+33563200061">05 63 20 00 61</a><br>
+        <a href="mailto:cabinet@slea-avocats.fr">cabinet@slea-avocats.fr</a>
+      </address>
+      <p style="margin-top:1rem">Lundi – vendredi<br>9 h – 12 h · 14 h – 18 h, sur rendez-vous</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© <span id="year">2026</span> LEVI EGEA & Associés — Cabinet d’avocats à Montauban</span>
+      <span><a href="mentions-legales.html">Mentions légales</a> · <a href="contact.html">Contact</a></span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>
-```

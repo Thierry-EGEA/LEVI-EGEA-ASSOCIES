@@ -1,509 +1,174 @@
-```html
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Formulaire de contact – LEVI EGEA & Associés</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, sans-serif;
-    background:#f5f5f5;
-}
-
-header{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-nav{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:12px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    padding:10px 14px;
-    border-radius:6px;
-}
-
-nav a:hover{
-    background:rgba(255,255,255,0.15);
-}
-
-.hero-section{
-    width:100%;
-    min-height:100vh;
-    background-image:url('images/Pleaffaire.jpg');
-    background-size:cover;
-    background-position:center;
-    padding:30px 15px;
-}
-
-.overlay{
-    background:rgba(0,0,0,0.75);
-    color:white;
-    max-width:1100px;
-    margin:auto;
-    padding:40px;
-    border-radius:15px;
-}
-
-h1{
-    text-align:center;
-    margin-bottom:10px;
-}
-
-.subtitle{
-    text-align:center;
-    margin-bottom:10px;
-}
-
-.info-text{
-    text-align:center;
-    margin-bottom:30px;
-    line-height:1.6;
-}
-
-.section-title{
-    margin:30px 0 15px;
-    text-decoration:underline;
-}
-
-.form-group{
-    margin-bottom:15px;
-    flex:1;
-}
-
-.form-row{
-    display:flex;
-    gap:20px;
-}
-
-label{
-    display:block;
-    margin-bottom:5px;
-    font-weight:bold;
-}
-
-input, select, textarea{
-    width:100%;
-    padding:12px;
-    border:none;
-    border-radius:8px;
-}
-
-textarea{
-    min-height:160px;
-}
-
-button{
-    width:100%;
-    padding:15px;
-    background:#7b0046;
-    color:white;
-    border:none;
-    border-radius:8px;
-    font-size:18px;
-    cursor:pointer;
-}
-
-button:hover{
-    opacity:0.9;
-}
-
-@media(max-width:768px){
-    .form-row{
-        flex-direction:column;
-    }
-}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Formulaire de contact | LEVI EGEA &amp; Associés, Montauban</title>
+<meta name="description" content="Préparez votre premier contact avec le cabinet LEVI EGEA &amp; Associés : générez votre fiche récapitulative PDF et adressez-la à votre interlocuteur.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://slea-avocats.fr/formulaire.html">
+<meta name="theme-color" content="#3d0a22">
+<meta name="author" content="LEVI EGEA &amp; Associés">
+<meta name="geo.region" content="FR-82">
+<meta name="geo.placename" content="Montauban">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="LEVI EGEA &amp; Associés">
+<meta property="og:title" content="Formulaire de contact | LEVI EGEA &amp; Associés, Montauban">
+<meta property="og:description" content="Préparez votre premier contact avec le cabinet LEVI EGEA &amp; Associés : générez votre fiche récapitulative PDF et adressez-la à votre interlocuteur.">
+<meta property="og:url" content="https://slea-avocats.fr/formulaire.html">
+<meta property="og:image" content="https://slea-avocats.fr/assets/img/og-levi-egea-associes.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Formulaire de contact | LEVI EGEA &amp; Associés, Montauban">
+<meta name="twitter:description" content="Préparez votre premier contact avec le cabinet LEVI EGEA &amp; Associés : générez votre fiche récapitulative PDF et adressez-la à votre interlocuteur.">
+<meta name="twitter:image" content="https://slea-avocats.fr/assets/img/og-levi-egea-associes.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["LegalService","LocalBusiness"],"@id":"https://slea-avocats.fr/#cabinet","name":"LEVI EGEA & Associés","alternateName":["Cabinet LEVI EGEA","SLEA Avocats","Levi Egea et Associés"],"description":"Cabinet d’avocats à Montauban (Tarn-et-Garonne) : droit des affaires, droit civil, droit commercial, droit de la famille, droit pénal et droit du travail.","url":"https://slea-avocats.fr/","logo":"https://slea-avocats.fr/assets/img/apple-touch-icon.png","image":"https://slea-avocats.fr/assets/img/og-levi-egea-associes.jpg","telephone":"+33563200061","email":"cabinet@slea-avocats.fr","priceRange":"Sur devis — convention d’honoraires","address":{"@type":"PostalAddress","streetAddress":"20 rue Michelet","postalCode":"82000","addressLocality":"Montauban","addressRegion":"Occitanie","addressCountry":"FR"},"hasMap":"https://www.google.com/maps/search/?api=1&query=20+rue+Michelet+82000+Montauban","areaServed":[{"@type":"City","name":"Montauban"},{"@type":"AdministrativeArea","name":"Tarn-et-Garonne"},{"@type":"AdministrativeArea","name":"Occitanie"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"12:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"14:00","closes":"18:00"}],"knowsAbout":["Droit des affaires","Droit civil","Droit commercial","Droit de la famille","Droit pénal","Droit social"],"knowsLanguage":["fr"]},{"@type":"WebSite","@id":"https://slea-avocats.fr/#site","url":"https://slea-avocats.fr/","name":"LEVI EGEA & Associés","inLanguage":"fr-FR","publisher":{"@id":"https://slea-avocats.fr/#cabinet"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://slea-avocats.fr/"},{"@type":"ListItem","position":2,"name":"Formulaire de contact","item":"https://slea-avocats.fr/formulaire.html"}]}]}</script>
 </head>
-
 <body>
-
-<header>
-<h1>Formulaire de contact</h1>
-
-<nav>
-<a href="index.html">Accueil</a>
-<a href="competences.html">Compétences</a>
-<a href="dossier.html">Rendez-vous</a>
-<a href="Honoraires.html">Honoraires</a>
-<a href="equipe.html">Équipe</a>
-<a href="contact.html">Contact</a>
-</nav>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-items">
+      <span class="hide-sm">20, rue Michelet · 82000 Montauban</span>
+      <span class="hide-sm">Du lundi au vendredi, sur rendez-vous</span>
+    </div>
+    <div class="topbar-items">
+      <a href="tel:+33563200061">05 63 20 00 61</a>
+      <a href="mailto:cabinet@slea-avocats.fr">cabinet@slea-avocats.fr</a>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="LEVI EGEA &amp; Associés — accueil">
+      <span class="brand-mark" aria-hidden="true">LE</span>
+      <span class="brand-text"><span class="brand-name">Levi Egea &amp; Associés</span><span class="brand-tag">Avocats · Montauban</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span></button>
+    <nav class="main-nav" id="menu" aria-label="Navigation principale">
+      <ul><li><a href="index.html">Accueil</a></li><li><a href="competences.html">Compétences</a></li><li><a href="equipe.html">Équipe</a></li><li><a href="dossier.html">Votre rendez-vous</a></li><li><a href="Honoraires.html">Honoraires</a></li><li><a href="contact.html">Contact</a></li><li><a class="btn btn-primary" href="formulaire.html">Prendre contact</a></li></ul>
+    </nav>
+  </div>
 </header>
-
-<section class="hero-section">
-<div class="overlay">
-
-<h1>Formulaire de contact</h1>
-
-<p class="subtitle">Cabinet LEVI EGEA & Associés</p>
-
-<p class="info-text">
-Bien vouloir compléter le formulaire et le faire parvenir par mail.<br>
-Compléter les champs.<br>
-En l'absence d'éléments, indiquer « Néant » ou « Non concerné ».
-</p>
-
-<h2 style="
-    color:white;
-    font-weight:bold;
-    text-decoration:underline;
-    font-size:24px;
-    text-align:center;
-">    Guide pratique du déroulement de la procédure
-</h2>
-
-<p style="
-    color:white;
-    font-size:15px;
-    line-height:1.6;
-    text-align:center;
-    max-width:700px;
-    margin:0 auto 25px auto;
-">
-    Afin de préparer au mieux votre rendez-vous et de faciliter la compréhension de votre dossier,
-    vous pouvez télécharger le guide pratique du déroulement de la procédure.
-</p>
-
-<p style="text-align:center; margin-top:25px;">
-    <a href="images/Guide.pdf"
-       download
-       style="
-           color:white;
-           text-decoration:none;
-           font-weight:bold;
-           display:inline-block;
-           text-align:center;
-           width:100%;
-       ">
-       📄 le guide pratique du déroulement de la procédure (PDF)
-       </a>
-</p>
-    
-<form id="contactForm">
-
-<h2 class="section-title">Destinataire</h2>
-
-<div class="form-group">
-<label>Choix de la personne</label>
-
-<select id="personne" required>
-<option value="">Choisir</option>
-
-<option 
-data-mail="cabinet@slea-avocats.fr">
-Maître Thierry EGEA
-</option>
-
-<option 
-data-mail="cabinet@slea-avocats.fr">
-Maître Jean-Lou LEVI
-</option>
-
-<option 
-data-mail="g.boggia@slea-avocats.fr">
-Maître Geoffroy BOGGIA
-</option>
-
-<option 
-data-mail="f.peronnet@slea-avocats.fr">
-Maître Fabien PERONNET
-</option>
-
-<option 
-data-mail="l.gressein@slea-avocats.fr">
-Maître Loïc GRESSEIN
-</option>
-
-<option 
-data-mail="cabinet@slea-avocats.fr">
-Maître Jean-Paul NOUHAUD
-</option>
-
-<option 
-data-mail="m.bouscary@slea-avocats.fr">
-Madame Majda LOUKILI BOUSCARY
-</option>
-
-<option 
-data-mail="p.cisse@slea-avocats.fr">
-Madame Penda CISSE
-</option>
-    
-<option 
-data-mail="m.chevallier@slea-avocats.fr">
-Monsieur Marc CHEVALLIER
-</option>
-    
-<option 
-data-mail="a.gt@slea-avocats.fr">
-Monsieur Aurélien GUILLEMOT-TREFFAINGUY
-</option>
-
-</select>
-</div>
-
-<div class="form-group">
-<label>Email du contact</label>
-<input type="text" id="mailContact" readonly>
-</div>
-
-<h2 class="section-title">Identité</h2>
-
-<div class="form-row">
-
-<div class="form-group">
-<label>Nom</label>
-<input type="text" name="Nom">
-</div>
-
-<div class="form-group">
-<label>Prénom</label>
-<input type="text" name="Prénom">
-</div>
-
-</div>
-
-<div class="form-group">
-<label>Nom de naissance</label>
-<input type="text" name="Nom de naissance">
-</div>
-
-<div class="form-row">
-
-<div class="form-group">
-<label>Date de naissance</label>
-<input type="date" name="Date de naissance">
-</div>
-
-<div class="form-group">
-<label>Lieu de naissance</label>
-<input type="text" name="Lieu de naissance">
-</div>
-
-<div class="form-group">
-<label>Département de naissance</label>
-<input type="text" name="Département de naissance">
-</div>
-
-</div>
-
-<div class="form-group">
-<label>Profession</label>
-<input type="text" name="Profession">
-</div>
-
-<div class="form-group">
-<label>Nationalité</label>
-<input type="text" name="Nationalité">
-</div>
-    
-<h2 class="section-title">Coordonnées</h2>
-
-<div class="form-group">
-<label>Adresse</label>
-<input type="text" name="Adresse">
-</div>
-
-<div class="form-row">
-
-<div class="form-group">
-<label>Code postal</label>
-<input type="text" name="Code postal">
-</div>
-
-<div class="form-group">
-<label>Ville</label>
-<input type="text" name="Ville">
-</div>
-
-</div>
-
-<div class="form-row">
-
-<div class="form-group">
-<label>Téléphone</label>
-<input type="tel" name="Téléphone">
-</div>
-
-<div class="form-group">
-<label>Email</label>
-<input type="email" name="Email">
-</div>
-
-</div>
-
-<h2 class="section-title">Partie adverse</h2>
-
-<div class="form-row">
-
-<div class="form-group">
-<label>Nom adverse</label>
-<input type="text" name="Nom adverse">
-</div>
-
-<div class="form-group">
-<label>Prénom adverse</label>
-<input type="text" name="Prénom adverse">
-</div>
-
-</div>
-
-<div class="form-group">
-<label>Adresse adverse</label>
-<input type="text" name="Adresse adverse">
-</div>
-
-<div class="form-row">
-
-<div class="form-group">
-<label>Code postal adverse</label>
-<input type="text" name="Code postal adverse">
-</div>
-
-<div class="form-group">
-<label>Ville adverse</label>
-<input type="text" name="Ville adverse">
-</div>
-
-</div>
-
-<div class="form-group">
-<label>Nom de l’avocat ou du cabinet</label>
-<input type="text" name="Nom avocat">
-</div>
-
-<div class="form-group">
-<label>Adresse de l’avocat</label>
-<input type="text" name="Adresse avocat">
-</div>
-
-<h2 class="section-title">Résumé</h2>
-
-<div class="form-group">
-<label>Résumé des faits</label>
-<textarea name="Résumé des faits"></textarea>
-</div>
-
-<button type="submit">Générer le PDF</button>
-
-</form>
-
-</div>
+<main id="contenu">
+<section class="page-hero">
+  
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d’Ariane"><ol><li><a href="index.html">Accueil</a></li><li aria-current="page">Formulaire de contact</li></ol></nav>
+    <p class="eyebrow light">Premier contact</p>
+    <h1>Formulaire de contact</h1>
+    <p class="lead">Renseignez les informations utiles à l’examen de votre situation. Une fiche PDF est générée : il vous suffit de l’adresser par e-mail à votre interlocuteur.</p>
+  </div>
 </section>
-
-<footer style="text-align:center;padding:20px;background:#111;color:white;">
-© LEVI EGEA & Associés
+<section class="section">
+  <div class="container layout-aside">
+    <form class="form-card" id="contactForm" novalidate>
+      <fieldset>
+        <legend>Destinataire</legend>
+        <div class="form-grid">
+          <div class="field"><label for="personne">Votre interlocuteur</label>
+            <select id="personne" required><option value="">Choisir…</option><option data-mail="cabinet@slea-avocats.fr">Le cabinet (je ne sais pas)</option><option data-mail="cabinet@slea-avocats.fr">Maître Thierry EGEA</option><option data-mail="cabinet@slea-avocats.fr">Maître Jean-Lou LEVI</option><option data-mail="g.boggia@slea-avocats.fr">Maître Geoffroy BOGGIA</option><option data-mail="f.peronnet@slea-avocats.fr">Maître Fabien PERONNET</option><option data-mail="l.gressein@slea-avocats.fr">Maître Loïc GRESSEIN</option><option data-mail="cabinet@slea-avocats.fr">Maître Jean-Paul NOUHAUD</option><option data-mail="a.gt@slea-avocats.fr">Monsieur Aurélien GUILLEMOT-TREFFAINGUY</option><option data-mail="m.bouscary@slea-avocats.fr">Madame Majda LOUKILI BOUSCARY</option><option data-mail="p.cisse@slea-avocats.fr">Madame Penda CISSE</option><option data-mail="m.chevallier@slea-avocats.fr">Monsieur Marc CHEVALLIER</option><option data-mail="m.charpentier@slea-avocats.fr">Madame Marie-Line CHARPENTIER</option></select></div>
+          <div class="field"><label for="mailContact">Adresse e-mail du destinataire</label><input type="email" id="mailContact" readonly></div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Votre identité</legend>
+        <div class="form-grid">
+          <div class="field"><label for="f-nom">Nom</label><input id="f-nom" type="text" name="Nom" autocomplete="family-name"></div><div class="field"><label for="f-prénom">Prénom</label><input id="f-prénom" type="text" name="Prénom" autocomplete="given-name"></div>
+          <div class="field"><label for="f-nomdenaissance">Nom de naissance</label><input id="f-nomdenaissance" type="text" name="Nom de naissance"></div><div class="field"><label for="f-datedenaissance">Date de naissance</label><input id="f-datedenaissance" type="date" name="Date de naissance" autocomplete="bday"></div>
+          <div class="field"><label for="f-lieudenaissance">Lieu de naissance</label><input id="f-lieudenaissance" type="text" name="Lieu de naissance"></div><div class="field"><label for="f-départementdenaissance">Département de naissance</label><input id="f-départementdenaissance" type="text" name="Département de naissance"></div>
+          <div class="field"><label for="f-profession">Profession</label><input id="f-profession" type="text" name="Profession" autocomplete="organization-title"></div><div class="field"><label for="f-nationalité">Nationalité</label><input id="f-nationalité" type="text" name="Nationalité"></div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Vos coordonnées</legend>
+        <div class="form-grid">
+          <div class="field full"><label for="f-adresse">Adresse</label><input id="f-adresse" type="text" name="Adresse" autocomplete="street-address"></div>
+          <div class="field"><label for="f-codepostal">Code postal</label><input id="f-codepostal" type="text" name="Code postal" autocomplete="postal-code"></div><div class="field"><label for="f-ville">Ville</label><input id="f-ville" type="text" name="Ville" autocomplete="address-level2"></div>
+          <div class="field"><label for="f-téléphone">Téléphone</label><input id="f-téléphone" type="tel" name="Téléphone" autocomplete="tel"></div><div class="field"><label for="f-email">E-mail</label><input id="f-email" type="email" name="Email" autocomplete="email"></div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Partie adverse</legend>
+        <div class="form-grid">
+          <div class="field"><label for="f-nomadverse">Nom</label><input id="f-nomadverse" type="text" name="Nom adverse"></div><div class="field"><label for="f-prénomadverse">Prénom</label><input id="f-prénomadverse" type="text" name="Prénom adverse"></div>
+          <div class="field full"><label for="f-adresseadverse">Adresse</label><input id="f-adresseadverse" type="text" name="Adresse adverse"></div>
+          <div class="field"><label for="f-codepostaladverse">Code postal</label><input id="f-codepostaladverse" type="text" name="Code postal adverse"></div><div class="field"><label for="f-villeadverse">Ville</label><input id="f-villeadverse" type="text" name="Ville adverse"></div>
+          <div class="field"><label for="f-nomavocat">Nom de son avocat ou cabinet</label><input id="f-nomavocat" type="text" name="Nom avocat"></div><div class="field"><label for="f-adresseavocat">Adresse de son avocat</label><input id="f-adresseavocat" type="text" name="Adresse avocat"></div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Votre situation</legend>
+        <div class="field"><label for="f-resume">Résumé des faits</label><textarea id="f-resume" name="Résumé des faits"></textarea></div>
+      </fieldset>
+      <button class="btn btn-primary" type="submit">Générer ma fiche PDF</button>
+      <p class="form-note" style="margin-top:1rem">Vos informations restent sur votre appareil : rien n’est transmis au cabinet tant que vous n’envoyez pas vous-même la fiche par e-mail.</p>
+      <div class="callout form-success" id="formSuccess" role="status">
+        <p><strong>Votre fiche a été téléchargée.</strong> Joignez-la à un e-mail adressé à votre interlocuteur :</p>
+        <p><a class="btn btn-outline" id="mailLink" href="mailto:cabinet@slea-avocats.fr">Écrire au destinataire</a></p>
+      </div>
+    </form>
+    <aside class="aside-card">
+      <h2>Comment ça marche ?</h2>
+      <p>1. Choisissez votre interlocuteur.<br>2. Complétez les informations connues.<br>3. Générez la fiche PDF.<br>4. Envoyez-la par e-mail avec vos pièces.</p>
+      <hr>
+      <p>Vous préférez écrire directement ?</p>
+      <a class="btn btn-gold" href="mailto:cabinet@slea-avocats.fr">cabinet@slea-avocats.fr</a>
+      <a class="btn btn-ghost" href="tel:+33563200061">05 63 20 00 61</a>
+    </aside>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div>
+      <a class="brand" href="index.html" aria-label="LEVI EGEA &amp; Associés — accueil">
+        <span class="brand-mark" aria-hidden="true">LE</span>
+        <span class="brand-text"><span class="brand-name">Levi Egea &amp; Associés</span><span class="brand-tag">Avocats · Montauban</span></span>
+      </a>
+      <p class="footer-about">L’un des plus anciens cabinets d’avocats de Montauban, au service des particuliers, des professionnels et des institutions.</p>
+    </div>
+    <div>
+      <h2>Compétences</h2>
+      <ul><li><a href="avocat-droit-des-affaires-montauban.html">Droit des affaires</a></li><li><a href="avocat-droit-civil-montauban.html">Droit civil</a></li><li><a href="avocat-droit-commercial-montauban.html">Droit commercial</a></li><li><a href="avocat-droit-de-la-famille-montauban.html">Droit de la famille</a></li><li><a href="avocat-droit-penal-montauban.html">Droit pénal</a></li><li><a href="avocat-droit-du-travail-montauban.html">Droit social</a></li></ul>
+    </div>
+    <div>
+      <h2>Le cabinet</h2>
+      <ul>
+        <li><a href="equipe.html">L’équipe</a></li>
+        <li><a href="dossier.html">Votre premier rendez-vous</a></li>
+        <li><a href="Honoraires.html">Honoraires</a></li>
+        <li><a href="formulaire.html">Formulaire de contact</a></li>
+        <li><a href="images/Guide.pdf">Guide pratique (PDF)</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Nous trouver</h2>
+      <address>
+        LEVI EGEA & Associés<br>20, rue Michelet<br>82000 Montauban<br><br>
+        <a href="tel:+33563200061">05 63 20 00 61</a><br>
+        <a href="mailto:cabinet@slea-avocats.fr">cabinet@slea-avocats.fr</a>
+      </address>
+      <p style="margin-top:1rem">Lundi – vendredi<br>9 h – 12 h · 14 h – 18 h, sur rendez-vous</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© <span id="year">2026</span> LEVI EGEA & Associés — Cabinet d’avocats à Montauban</span>
+      <span><a href="mentions-legales.html">Mentions légales</a> · <a href="contact.html">Contact</a></span>
+    </div>
+  </div>
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
-
-<script>
-
-const select = document.getElementById('personne');
-const mail = document.getElementById('mailContact');
-
-select.addEventListener('change', function () {
-
-    const selectedOption = this.options[this.selectedIndex];
-
-    mail.value = selectedOption.dataset.mail || '';
-
-});
-
-function formatSentence(text) {
-
-    if (!text) return "Néant";
-
-    text = text.trim();
-
-    return text.charAt(0).toUpperCase() + text.slice(1);
-}
-
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-
-    e.preventDefault();
-
-    const { jsPDF } = window.jspdf;
-    const pdf = new jsPDF();
-
-    let y = 20;
-
-    pdf.setFontSize(16);
-    pdf.text("CABINET LEVI EGEA & ASSOCIES", 20, y);
-
-    y += 15;
-
-    pdf.setFontSize(12);
-
-    const personne =
-    select.options[select.selectedIndex].text || "Néant";
-
-    pdf.text("Destinataire : " + personne, 20, y);
-
-    y += 8;
-
-    pdf.text(
-        "Adresse mail : " + (mail.value || "Néant"),
-        20,
-        y
-    );
-
-    y += 12;
-
-    const fields = this.querySelectorAll("input, textarea");
-
-    fields.forEach(field => {
-
-        if(field.id === "mailContact") return;
-
-        let label = field.name;
-
-        let value = formatSentence(field.value);
-
-        const text = label + " : " + value;
-
-        const lines = pdf.splitTextToSize(text, 170);
-
-        pdf.text(lines, 20, y);
-
-        y += lines.length * 8;
-
-        if (y > 270) {
-
-            pdf.addPage();
-            y = 20;
-        }
-
-    });
-
-    const nom =
-    this.querySelector('input[name="Nom"]').value || "client";
-
-    pdf.save("Dossier_" + nom + ".pdf");
-
-});
-
-</script>
-
+<script src="assets/js/site.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js" defer></script>
+<script src="assets/js/formulaire.js" defer></script>
 </body>
 </html>
-```

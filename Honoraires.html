@@ -1,288 +1,162 @@
-```html
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Nos honoraires – LEVI EGEA & Associés</title>
-<link rel="stylesheet" href="style.css">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, sans-serif;
-    line-height:1.6;
-    background:#111;
-}
-
-/* HEADER */
-header{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-header h1{
-    margin-bottom:15px;
-}
-
-nav{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:12px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    padding:10px 14px;
-    border-radius:6px;
-    transition:0.3s;
-}
-
-nav a:hover{
-    background:rgba(255,255,255,0.15);
-}
-
-/* HERO */
-.hero-section{
-    width:100%;
-    min-height:100vh;
-    background-image:url('images/Carnet.jpg');
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    padding:30px 15px;
-}
-
-.overlay{
-    background:rgba(0,0,0,0.65);
-    color:white;
-    max-width:1100px;
-    margin:auto;
-    padding:40px;
-    border-radius:12px;
-}
-
-/* TITRES */
-.main-title{
-    text-align:center;
-    font-size:clamp(32px, 5vw, 50px);
-    margin-bottom:10px;
-}
-
-.subtitle{
-    text-align:center;
-    font-size:clamp(18px, 3vw, 22px);
-    margin-bottom:50px;
-}
-
-/* BLOCS */
-.content-block{
-    display:flex;
-    align-items:stretch;
-    gap:25px;
-    margin-bottom:50px;
-}
-
-.content-block.reverse{
-    flex-direction:row-reverse;
-}
-
-/* IMAGES */
-.image-container{
-    flex:0 0 40%;
-    display:flex;
-}
-
-.small-image-container{
-    flex:0 0 30%;
-}
-
-.image-container img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    border-radius:8px;
-}
-
-/* TEXTE */
-.text-content{
-    flex:1;
-    display:flex;
-    flex-direction:column;
-}
-
-.text-content h2{
-    color:white;
-    text-align:center;
-    text-decoration:underline;
-    margin-bottom:25px;
-    font-size:clamp(26px, 4vw, 32px);
-}
-
-.text-content p{
-    font-size:18px;
-    text-align:justify;
-}
-
-/* FOOTER */
-footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:20px;
-    font-size:14px;
-}
-
-/* MOBILE */
-@media (max-width:768px){
-
-    .overlay{
-        padding:25px;
-    }
-
-    .content-block,
-    .content-block.reverse{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .image-container,
-    .small-image-container{
-        width:100%;
-    }
-
-    .image-container img{
-        width:100%;
-        height:300px;
-        object-fit:cover;
-    }
-
-    .text-content p{
-        font-size:16px;
-        text-align:left;
-    }
-
-    nav{
-        flex-direction:column;
-        gap:8px;
-    }
-
-    nav a{
-        display:block;
-        width:100%;
-        text-align:center;
-    }
-
-    footer{
-        padding:15px;
-        font-size:13px;
-    }
-}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Honoraires et protection juridique | LEVI EGEA &amp; Associés</title>
+<meta name="description" content="Convention d’honoraires, honoraire de résultat, protection juridique : tout savoir sur les honoraires du cabinet LEVI EGEA &amp; Associés à Montauban.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://slea-avocats.fr/Honoraires.html">
+<meta name="theme-color" content="#3d0a22">
+<meta name="author" content="LEVI EGEA &amp; Associés">
+<meta name="geo.region" content="FR-82">
+<meta name="geo.placename" content="Montauban">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="LEVI EGEA &amp; Associés">
+<meta property="og:title" content="Honoraires et protection juridique | LEVI EGEA &amp; Associés">
+<meta property="og:description" content="Convention d’honoraires, honoraire de résultat, protection juridique : tout savoir sur les honoraires du cabinet LEVI EGEA &amp; Associés à Montauban.">
+<meta property="og:url" content="https://slea-avocats.fr/Honoraires.html">
+<meta property="og:image" content="https://slea-avocats.fr/assets/img/og-levi-egea-associes.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Honoraires et protection juridique | LEVI EGEA &amp; Associés">
+<meta name="twitter:description" content="Convention d’honoraires, honoraire de résultat, protection juridique : tout savoir sur les honoraires du cabinet LEVI EGEA &amp; Associés à Montauban.">
+<meta name="twitter:image" content="https://slea-avocats.fr/assets/img/og-levi-egea-associes.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["LegalService","LocalBusiness"],"@id":"https://slea-avocats.fr/#cabinet","name":"LEVI EGEA & Associés","alternateName":["Cabinet LEVI EGEA","SLEA Avocats","Levi Egea et Associés"],"description":"Cabinet d’avocats à Montauban (Tarn-et-Garonne) : droit des affaires, droit civil, droit commercial, droit de la famille, droit pénal et droit du travail.","url":"https://slea-avocats.fr/","logo":"https://slea-avocats.fr/assets/img/apple-touch-icon.png","image":"https://slea-avocats.fr/assets/img/og-levi-egea-associes.jpg","telephone":"+33563200061","email":"cabinet@slea-avocats.fr","priceRange":"Sur devis — convention d’honoraires","address":{"@type":"PostalAddress","streetAddress":"20 rue Michelet","postalCode":"82000","addressLocality":"Montauban","addressRegion":"Occitanie","addressCountry":"FR"},"hasMap":"https://www.google.com/maps/search/?api=1&query=20+rue+Michelet+82000+Montauban","areaServed":[{"@type":"City","name":"Montauban"},{"@type":"AdministrativeArea","name":"Tarn-et-Garonne"},{"@type":"AdministrativeArea","name":"Occitanie"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"12:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"14:00","closes":"18:00"}],"knowsAbout":["Droit des affaires","Droit civil","Droit commercial","Droit de la famille","Droit pénal","Droit social"],"knowsLanguage":["fr"]},{"@type":"WebSite","@id":"https://slea-avocats.fr/#site","url":"https://slea-avocats.fr/","name":"LEVI EGEA & Associés","inLanguage":"fr-FR","publisher":{"@id":"https://slea-avocats.fr/#cabinet"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://slea-avocats.fr/"},{"@type":"ListItem","position":2,"name":"Honoraires","item":"https://slea-avocats.fr/Honoraires.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Comment sont fixés les honoraires d’un avocat ?","acceptedAnswer":{"@type":"Answer","text":"Les honoraires sont libres entre l’avocat et son client. Ils font l’objet d’une convention écrite tenant compte du temps consacré, du travail de recherche, de la complexité de l’affaire, de l’importance des intérêts en cause et des résultats obtenus."}},{"@type":"Question","name":"Qu’est-ce qu’un honoraire de résultat ?","acceptedAnswer":{"@type":"Answer","text":"Prévu dans la convention d’honoraires, il s’ajoute à l’honoraire d’intervention et tient compte des avantages financiers procurés au client. Il peut être forfaitaire ou proportionnel au résultat obtenu."}},{"@type":"Question","name":"Puis-je choisir mon avocat si mon assurance protection juridique intervient ?","acceptedAnswer":{"@type":"Answer","text":"Oui. L’assuré reste libre de choisir son avocat, y compris lorsque son intervention est prise en charge par son assurance protection juridique. Le reliquat éventuel au-delà du barème de l’assureur reste à votre charge."}}]}]}</script>
 </head>
-
 <body>
-
-<header>
-    <h1>Nos honoraires</h1>
-
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="competences.html">Compétences</a>
-        <a href="dossier.html">Votre premier rendez-vous</a>
-        <a href="Honoraires.html">Nos honoraires</a>
-        <a href="equipe.html">Équipe</a>
-        <a href="contact.html">Contact</a>
-	<a href="formulaire.html">Formulaire de contact</a>
-    </nav>
-</header>
-
-<section class="hero-section">
-
-    <div class="overlay">
-
-        <h1 class="main-title">
-            LEVI EGEA & Associés
-        </h1>
-
-        <p class="subtitle">
-            Cabinet d’avocats à Montauban
-        </p>
-
-        <!-- HONORAIRES -->
-        <div class="content-block">
-
-            <div class="image-container">
-                <img src="images/Statue-1.jpg"
-                     alt="Statue avocat">
-            </div>
-
-            <div class="text-content">
-
-                <h2>Les honoraires de l'Avocat</h2>
-
-                <p>
-                    Les honoraires sont libres entre l’avocat et son client.<br><br>
-
-                    Ils doivent faire l’objet d’une convention écrite tenant compte du temps consacré au litige, du travail de recherche, de la complexité de l’affaire, de l’importance des intérêts en cause, des avantages et résultats obtenus au profit du client.<br><br>
-
-                    Aux honoraires d’intervention peuvent s’ajouter les honoraires de résultat prévus dans la convention d’honoraires, tenant compte des avantages financiers procurés au client.<br><br>
-
-                    Les honoraires de résultat peuvent être forfaitaires ou proportionnels au résultat obtenu.<br><br>
-
-                    Les honoraires seront fixés une fois que l’Avocat aura pu prendre connaissance du litige.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- PROTECTION JURIDIQUE -->
-        <div class="content-block reverse">
-
-            <div class="image-container small-image-container">
-                <img src="images/Placenationale.jpg"
-                     alt="Place Nationale Montauban">
-            </div>
-
-            <div class="text-content">
-
-                <h2>La protection juridique</h2>
-
-                <p>
-                    Les honoraires peuvent être pris en charge, en tout ou partie, par une assurance protection juridique, souvent incluse dans la souscription d’un contrat d’assurance auprès de votre compagnie ou de votre banque (assurance habitation, carte bancaire, etc.).<br><br>
-
-                    Le Cabinet vous invitera donc, dans les contentieux qui le permettent, à vérifier si vous êtes bénéficiaire d’une telle prise en charge.<br><br>
-
-                    Sachez que l’assuré reste libre de choisir son avocat, y compris lorsque son intervention est prise en charge par son assurance protection juridique.<br><br>
-
-                    Il est possible que votre assurance limite sa prise en charge selon un barème spécifique ; le reliquat des honoraires restera alors à votre charge.
-                </p>
-
-            </div>
-
-        </div>
-
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-items">
+      <span class="hide-sm">20, rue Michelet · 82000 Montauban</span>
+      <span class="hide-sm">Du lundi au vendredi, sur rendez-vous</span>
     </div>
-
+    <div class="topbar-items">
+      <a href="tel:+33563200061">05 63 20 00 61</a>
+      <a href="mailto:cabinet@slea-avocats.fr">cabinet@slea-avocats.fr</a>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="LEVI EGEA &amp; Associés — accueil">
+      <span class="brand-mark" aria-hidden="true">LE</span>
+      <span class="brand-text"><span class="brand-name">Levi Egea &amp; Associés</span><span class="brand-tag">Avocats · Montauban</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span></button>
+    <nav class="main-nav" id="menu" aria-label="Navigation principale">
+      <ul><li><a href="index.html">Accueil</a></li><li><a href="competences.html">Compétences</a></li><li><a href="equipe.html">Équipe</a></li><li><a href="dossier.html">Votre rendez-vous</a></li><li><a href="Honoraires.html" aria-current="page">Honoraires</a></li><li><a href="contact.html">Contact</a></li><li><a class="btn btn-primary" href="formulaire.html">Prendre contact</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="contenu">
+<section class="page-hero">
+  <div class="bg"><img src="assets/img/convention-honoraires-avocat.webp" alt="" width="1200" height="800" fetchpriority="high"></div>
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d’Ariane"><ol><li><a href="index.html">Accueil</a></li><li aria-current="page">Honoraires</li></ol></nav>
+    <p class="eyebrow light">Transparence</p>
+    <h1>Nos honoraires</h1>
+    <p class="lead">Des honoraires fixés par écrit, une fois votre situation connue, et la possibilité d’une prise en charge par votre assurance protection juridique.</p>
+  </div>
 </section>
-
-<footer>
-    © LEVI EGEA & Associés - 20, rue Michelet 82000 MONTAUBAN -
-    +33(0)5 63 20 00 61 - cabinet@slea-avocats.fr
+<section class="section">
+  <div class="container split">
+    <div class="split-media-wrap reveal"><div class="split-media"><img src="assets/img/convention-honoraires-avocat.webp" alt="Poignée de main symbolisant la convention d’honoraires entre l’avocat et son client" width="900" height="1125" loading="lazy"></div></div>
+    <div class="prose reveal">
+      <p class="eyebrow">Convention d’honoraires</p>
+      <h2>Les honoraires de l’avocat</h2>
+      <p>Les honoraires sont libres entre l’avocat et son client. Ils font l’objet d’une convention écrite tenant compte :</p>
+      <ul>
+        <li>du temps consacré au dossier et du travail de recherche ;</li>
+        <li>de la complexité de l’affaire ;</li>
+        <li>de l’importance des intérêts en cause ;</li>
+        <li>des avantages et résultats obtenus au profit du client.</li>
+      </ul>
+      <p>Aux honoraires d’intervention peuvent s’ajouter des honoraires de résultat prévus dans la convention, tenant compte des avantages financiers procurés au client. Ils peuvent être forfaitaires ou proportionnels au résultat obtenu.</p>
+      <div class="callout"><p>Les honoraires sont fixés une fois que l’avocat a pu prendre connaissance de votre dossier.</p></div>
+    </div>
+  </div>
+</section>
+<section class="section section-sand">
+  <div class="container split reverse">
+    <div class="split-media-wrap reveal"><div class="split-media"><img src="assets/img/place-nationale-montauban-arcades.webp" alt="Place Nationale de Montauban" width="792" height="1008" loading="lazy"></div></div>
+    <div class="prose reveal">
+      <p class="eyebrow">Assurance</p>
+      <h2>La protection juridique</h2>
+      <p>Les honoraires peuvent être pris en charge, en tout ou partie, par une assurance protection juridique, souvent incluse dans un contrat d’assurance souscrit auprès de votre compagnie ou de votre banque (assurance habitation, carte bancaire…).</p>
+      <p>Dans les contentieux qui le permettent, le cabinet vous invitera à vérifier si vous bénéficiez d’une telle prise en charge.</p>
+      <p>L’assuré reste <strong>libre de choisir son avocat</strong>, y compris lorsque son intervention est prise en charge par son assurance. Celle-ci peut limiter sa prise en charge selon un barème spécifique ; le reliquat des honoraires reste alors à votre charge.</p>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container narrow">
+    <div class="section-head reveal"><p class="eyebrow">Questions fréquentes</p><h2>Honoraires : vos questions</h2></div>
+    <div class="faq"><details><summary>Comment sont fixés les honoraires d’un avocat ?</summary><div><p>Les honoraires sont libres entre l’avocat et son client. Ils font l’objet d’une convention écrite tenant compte du temps consacré, du travail de recherche, de la complexité de l’affaire, de l’importance des intérêts en cause et des résultats obtenus.</p></div></details><details><summary>Qu’est-ce qu’un honoraire de résultat ?</summary><div><p>Prévu dans la convention d’honoraires, il s’ajoute à l’honoraire d’intervention et tient compte des avantages financiers procurés au client. Il peut être forfaitaire ou proportionnel au résultat obtenu.</p></div></details><details><summary>Puis-je choisir mon avocat si mon assurance protection juridique intervient ?</summary><div><p>Oui. L’assuré reste libre de choisir son avocat, y compris lorsque son intervention est prise en charge par son assurance protection juridique. Le reliquat éventuel au-delà du barème de l’assureur reste à votre charge.</p></div></details></div>
+  </div>
+</section>
+<section class="cta-band">
+  <div class="container">
+    <div>
+      <h2>Une question juridique ?</h2>
+      <p>Présentez-nous votre situation : nous vous proposerons un rendez-vous avec l’avocat compétent.</p>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn-gold" href="formulaire.html">Prendre contact</a>
+      <a class="btn btn-ghost" href="tel:+33563200061">05 63 20 00 61</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div>
+      <a class="brand" href="index.html" aria-label="LEVI EGEA &amp; Associés — accueil">
+        <span class="brand-mark" aria-hidden="true">LE</span>
+        <span class="brand-text"><span class="brand-name">Levi Egea &amp; Associés</span><span class="brand-tag">Avocats · Montauban</span></span>
+      </a>
+      <p class="footer-about">L’un des plus anciens cabinets d’avocats de Montauban, au service des particuliers, des professionnels et des institutions.</p>
+    </div>
+    <div>
+      <h2>Compétences</h2>
+      <ul><li><a href="avocat-droit-des-affaires-montauban.html">Droit des affaires</a></li><li><a href="avocat-droit-civil-montauban.html">Droit civil</a></li><li><a href="avocat-droit-commercial-montauban.html">Droit commercial</a></li><li><a href="avocat-droit-de-la-famille-montauban.html">Droit de la famille</a></li><li><a href="avocat-droit-penal-montauban.html">Droit pénal</a></li><li><a href="avocat-droit-du-travail-montauban.html">Droit social</a></li></ul>
+    </div>
+    <div>
+      <h2>Le cabinet</h2>
+      <ul>
+        <li><a href="equipe.html">L’équipe</a></li>
+        <li><a href="dossier.html">Votre premier rendez-vous</a></li>
+        <li><a href="Honoraires.html">Honoraires</a></li>
+        <li><a href="formulaire.html">Formulaire de contact</a></li>
+        <li><a href="images/Guide.pdf">Guide pratique (PDF)</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Nous trouver</h2>
+      <address>
+        LEVI EGEA & Associés<br>20, rue Michelet<br>82000 Montauban<br><br>
+        <a href="tel:+33563200061">05 63 20 00 61</a><br>
+        <a href="mailto:cabinet@slea-avocats.fr">cabinet@slea-avocats.fr</a>
+      </address>
+      <p style="margin-top:1rem">Lundi – vendredi<br>9 h – 12 h · 14 h – 18 h, sur rendez-vous</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© <span id="year">2026</span> LEVI EGEA & Associés — Cabinet d’avocats à Montauban</span>
+      <span><a href="mentions-legales.html">Mentions légales</a> · <a href="contact.html">Contact</a></span>
+    </div>
+  </div>
 </footer>
-
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>
-```

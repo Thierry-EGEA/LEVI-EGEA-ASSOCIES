@@ -1,282 +1,139 @@
-```html
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Nos honoraires – LEVI EGEA & Associés</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, sans-serif;
-    background:#111;
-    color:white;
-}
-
-/* HEADER */
-header{
-    background:#111;
-    text-align:center;
-    padding:20px;
-}
-
-header h1{
-    margin-bottom:15px;
-}
-
-nav{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:12px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    padding:10px 14px;
-    border-radius:6px;
-}
-
-nav a:hover{
-    background:rgba(255,255,255,0.15);
-}
-
-/* HERO */
-.hero{
-    width:100%;
-    min-height:100vh;
-    background:url('images/Carnet.jpg') center/cover no-repeat;
-    padding:30px 15px;
-}
-
-/* OVERLAY */
-.overlay{
-    background:rgba(0,0,0,0.65);
-    max-width:1100px;
-    margin:auto;
-    padding:40px;
-    border-radius:12px;
-}
-
-/* TITRES */
-.main-title{
-    text-align:center;
-    font-size:clamp(32px,5vw,50px);
-}
-
-.subtitle{
-    text-align:center;
-    margin-bottom:40px;
-    font-size:clamp(18px,3vw,22px);
-}
-
-/* CONTENEUR */
-.container{
-    display:flex;
-    gap:25px;
-    align-items:stretch;
-}
-
-/* IMAGE UNIQUE */
-.side-image{
-    flex:0 0 38%;
-}
-
-.side-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    border-radius:8px;
-}
-
-/* TEXTE */
-.content{
-    flex:1;
-}
-
-/* BLOCS */
-.section{
-    margin-bottom:40px;
-}
-
-h2{
-    text-align:center;
-    text-decoration:underline;
-    font-size:clamp(22px,3.5vw,26px);
-    margin-bottom:15px;
-}
-
-p{
-    font-size:18px;
-    line-height:1.6;
-    text-align:justify;
-}
-
-/* FOOTER */
-footer{
-    text-align:center;
-    padding:20px;
-    background:#111;
-    font-size:14px;
-}
-
-/* MOBILE */
-@media (max-width:768px){
-
-    .overlay{
-        padding:25px;
-    }
-
-    .container{
-        flex-direction:column;
-    }
-
-    .side-image img{
-        height:300px;
-    }
-
-    p{
-        font-size:16px;
-        text-align:left;
-    }
-
-    nav{
-        flex-direction:column;
-    }
-
-    nav a{
-        width:100%;
-        text-align:center;
-    }
-}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Premier rendez-vous avec un avocat | LEVI EGEA &amp; Associés</title>
+<meta name="description" content="Premier rendez-vous, convention d’honoraires, stratégie, défense : comment le cabinet LEVI EGEA &amp; Associés conduit votre dossier, étape par étape.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://slea-avocats.fr/dossier.html">
+<meta name="theme-color" content="#3d0a22">
+<meta name="author" content="LEVI EGEA &amp; Associés">
+<meta name="geo.region" content="FR-82">
+<meta name="geo.placename" content="Montauban">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="LEVI EGEA &amp; Associés">
+<meta property="og:title" content="Premier rendez-vous avec un avocat | LEVI EGEA &amp; Associés">
+<meta property="og:description" content="Premier rendez-vous, convention d’honoraires, stratégie, défense : comment le cabinet LEVI EGEA &amp; Associés conduit votre dossier, étape par étape.">
+<meta property="og:url" content="https://slea-avocats.fr/dossier.html">
+<meta property="og:image" content="https://slea-avocats.fr/assets/img/og-levi-egea-associes.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Premier rendez-vous avec un avocat | LEVI EGEA &amp; Associés">
+<meta name="twitter:description" content="Premier rendez-vous, convention d’honoraires, stratégie, défense : comment le cabinet LEVI EGEA &amp; Associés conduit votre dossier, étape par étape.">
+<meta name="twitter:image" content="https://slea-avocats.fr/assets/img/og-levi-egea-associes.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["LegalService","LocalBusiness"],"@id":"https://slea-avocats.fr/#cabinet","name":"LEVI EGEA & Associés","alternateName":["Cabinet LEVI EGEA","SLEA Avocats","Levi Egea et Associés"],"description":"Cabinet d’avocats à Montauban (Tarn-et-Garonne) : droit des affaires, droit civil, droit commercial, droit de la famille, droit pénal et droit du travail.","url":"https://slea-avocats.fr/","logo":"https://slea-avocats.fr/assets/img/apple-touch-icon.png","image":"https://slea-avocats.fr/assets/img/og-levi-egea-associes.jpg","telephone":"+33563200061","email":"cabinet@slea-avocats.fr","priceRange":"Sur devis — convention d’honoraires","address":{"@type":"PostalAddress","streetAddress":"20 rue Michelet","postalCode":"82000","addressLocality":"Montauban","addressRegion":"Occitanie","addressCountry":"FR"},"hasMap":"https://www.google.com/maps/search/?api=1&query=20+rue+Michelet+82000+Montauban","areaServed":[{"@type":"City","name":"Montauban"},{"@type":"AdministrativeArea","name":"Tarn-et-Garonne"},{"@type":"AdministrativeArea","name":"Occitanie"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"12:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"14:00","closes":"18:00"}],"knowsAbout":["Droit des affaires","Droit civil","Droit commercial","Droit de la famille","Droit pénal","Droit social"],"knowsLanguage":["fr"]},{"@type":"WebSite","@id":"https://slea-avocats.fr/#site","url":"https://slea-avocats.fr/","name":"LEVI EGEA & Associés","inLanguage":"fr-FR","publisher":{"@id":"https://slea-avocats.fr/#cabinet"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://slea-avocats.fr/"},{"@type":"ListItem","position":2,"name":"Votre premier rendez-vous","item":"https://slea-avocats.fr/dossier.html"}]},{"@type":"HowTo","name":"Le déroulement de votre dossier au cabinet LEVI EGEA & Associés","step":[{"@type":"HowToStep","position":1,"name":"Le premier rendez-vous","text":"Parce qu’être à l’écoute de nos clients nous semble primordial, nous vous recevons au cabinet lors d’un premier rendez-vous afin de recueillir toutes les informations nécessaires à la bonne conduite de votre dossier et de vous conseiller. En cas de besoin, nous pouvons nous déplacer sur site pour mieux comprendre votre problématique."},{"@type":"HowToStep","position":2,"name":"La convention d’honoraires","text":"Le cabinet se veut transparent, notamment quant aux honoraires pratiqués. Chaque ouverture de dossier donne lieu à la rédaction d’une convention d’honoraires définissant le montant des honoraires et les modalités de règlement, conformément à la réglementation en vigueur."},{"@type":"HowToStep","position":3,"name":"Définir la stratégie","text":"L’avocat en charge de votre dossier définit avec vous la stratégie juridique et procédurale adéquate et vous soumet pour validation chaque acte juridique rédigé."},{"@type":"HowToStep","position":4,"name":"Défendre vos intérêts","text":"Face à une juridiction comme lors d’une négociation, par ses écritures ou sa plaidoirie, le cabinet consacre toute son énergie à la défense de vos intérêts, au moyen d’arguments de droit ayant fait l’objet de recherches précises et des éléments de fait que vous nous aurez confiés."},{"@type":"HowToStep","position":5,"name":"Le dénouement","text":"À l’issue de la procédure, nous vous expliquons de façon intelligible le résultat obtenu et nous vous accompagnons dans l’exécution de la décision rendue."}]}]}</script>
 </head>
-
 <body>
-
-<header>
-    <h1>Nos honoraires</h1>
-
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="competences.html">Compétences</a>
-        <a href="dossier.html">Votre premier rendez-vous</a>
-        <a href="Honoraires.html">Nos honoraires</a>
-        <a href="equipe.html">Équipe</a>
-        <a href="contact.html">Contact</a>
-	<a href="formulaire.html">Formulaire de contact</a>
-    </nav>
-</header>
-
-<section class="hero">
-
-<div class="overlay">
-
-    <h1 class="main-title">LEVI EGEA & Associés</h1>
-
-    <p class="subtitle">Cabinet d’avocats à Montauban</p>
-
-    <div class="container">
-
-        <!-- IMAGE UNIQUE -->
-        <div class="side-image">
-            <img src="images/Statue.jpg" alt="Statue avocat">
-        </div>
-
-        <!-- TEXTE COMPLET -->
-        <div class="content">
-
-            <div class="section">
-                <h2>Le premier rendez-vous</h2>
-                <p>
-                    Parce qu’être à l’écoute de nos clients nous semble primordial,
-                    nous vous recevons au cabinet lors d’un premier rendez-vous afin
-                    de recueillir toutes les informations nécessaires à la bonne conduite
-                    de votre dossier et vous conseiller.<br><br>
-
-                    En cas de besoin, nous pouvons nous déplacer sur site pour mieux
-                    comprendre votre problématique.
-                </p>
-            </div>
-
-            <div class="section">
-                <h2>La convention d'honoraires</h2>
-                <p>
-                    Le Cabinet d’Avocats LEVI-EGEA & Associés se veut transparent,
-                    notamment quant aux honoraires pratiqués.
-                    Chaque ouverture de dossier donne donc automatiquement lieu
-                    à la rédaction d’une convention d’honoraires définissant
-                    le montant des honoraires perçus par l’avocat et les modalités
-                    de règlement, conformément à la réglementation en vigueur.
-                </p>
-            </div>
-
-            <div class="section">
-                <h2>Définir la stratégie juridique</h2>
-                <p>
-                    L’avocat en charge de votre dossier définit, avec vous,
-                    la stratégie juridique et procédurale adéquate et vous soumet
-                    pour validation chaque acte juridique rédigé.
-                </p>
-            </div>
-
-            <div class="section">
-                <h2>Défendre vos intérêts</h2>
-                <p>
-                    Que ce soit face à une juridiction ou lors d’une négociation,
-                    par ses écritures ou sa plaidoirie, le Cabinet d’Avocats
-                    LEVI-EGEA & Associés consacre toute son énergie à la défense de vos intérêts,
-                    au moyen d’arguments de droit ayant fait l’objet de recherches précises
-                    et des éléments de faits que vous nous aurez confiés.
-                </p>
-            </div>
-
-            <div class="section">
-                <h2>Le dénouement</h2>
-                <p>
-                    À l’issue de la procédure, nous vous expliquons de façon intelligible
-                    le résultat obtenu et nous vous accompagnons dans l’exécution
-                    de la décision rendue.
-                </p>
-            </div>
-
-<p style="text-align:center; margin-top:25px;">
-    <a href="images/Guide.pdf"
-       download
-       style="
-           color:white;
-           text-decoration:none;
-           font-weight:bold;
-           display:inline-block;
-           text-align:center;
-           width:100%;
-       ">
-       📄 le guide pratique du déroulement de la procédure (PDF)
-       </a>
-</p>
-
-        </div>
-
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-items">
+      <span class="hide-sm">20, rue Michelet · 82000 Montauban</span>
+      <span class="hide-sm">Du lundi au vendredi, sur rendez-vous</span>
     </div>
-
+    <div class="topbar-items">
+      <a href="tel:+33563200061">05 63 20 00 61</a>
+      <a href="mailto:cabinet@slea-avocats.fr">cabinet@slea-avocats.fr</a>
+    </div>
+  </div>
 </div>
-
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="LEVI EGEA &amp; Associés — accueil">
+      <span class="brand-mark" aria-hidden="true">LE</span>
+      <span class="brand-text"><span class="brand-name">Levi Egea &amp; Associés</span><span class="brand-tag">Avocats · Montauban</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span></button>
+    <nav class="main-nav" id="menu" aria-label="Navigation principale">
+      <ul><li><a href="index.html">Accueil</a></li><li><a href="competences.html">Compétences</a></li><li><a href="equipe.html">Équipe</a></li><li><a href="dossier.html" aria-current="page">Votre rendez-vous</a></li><li><a href="Honoraires.html">Honoraires</a></li><li><a href="contact.html">Contact</a></li><li><a class="btn btn-primary" href="formulaire.html">Prendre contact</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="contenu">
+<section class="page-hero">
+  <div class="bg"><img src="assets/img/premier-rendez-vous-avocat.webp" alt="" width="1200" height="800" fetchpriority="high"></div>
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d’Ariane"><ol><li><a href="index.html">Accueil</a></li><li aria-current="page">Votre premier rendez-vous</li></ol></nav>
+    <p class="eyebrow light">Votre dossier</p>
+    <h1>Votre premier rendez-vous</h1>
+    <p class="lead">Écoute, transparence et clarté : voici comment nous conduisons votre dossier, de la première rencontre jusqu’à l’exécution de la décision.</p>
+  </div>
 </section>
-
-<footer>
-© LEVI EGEA & Associés - 20, rue Michelet 82000 MONTAUBAN -
-+33(0)5 63 20 00 61 - cabinet@slea-avocats.fr
+<section class="section">
+  <div class="container layout-aside">
+    <ol class="timeline"><li class="reveal"><h2>Le premier rendez-vous</h2><p>Parce qu’être à l’écoute de nos clients nous semble primordial, nous vous recevons au cabinet lors d’un premier rendez-vous afin de recueillir toutes les informations nécessaires à la bonne conduite de votre dossier et de vous conseiller. En cas de besoin, nous pouvons nous déplacer sur site pour mieux comprendre votre problématique.</p></li><li class="reveal"><h2>La convention d’honoraires</h2><p>Le cabinet se veut transparent, notamment quant aux honoraires pratiqués. Chaque ouverture de dossier donne lieu à la rédaction d’une convention d’honoraires définissant le montant des honoraires et les modalités de règlement, conformément à la réglementation en vigueur.</p></li><li class="reveal"><h2>Définir la stratégie</h2><p>L’avocat en charge de votre dossier définit avec vous la stratégie juridique et procédurale adéquate et vous soumet pour validation chaque acte juridique rédigé.</p></li><li class="reveal"><h2>Défendre vos intérêts</h2><p>Face à une juridiction comme lors d’une négociation, par ses écritures ou sa plaidoirie, le cabinet consacre toute son énergie à la défense de vos intérêts, au moyen d’arguments de droit ayant fait l’objet de recherches précises et des éléments de fait que vous nous aurez confiés.</p></li><li class="reveal"><h2>Le dénouement</h2><p>À l’issue de la procédure, nous vous expliquons de façon intelligible le résultat obtenu et nous vous accompagnons dans l’exécution de la décision rendue.</p></li></ol>
+    <aside class="aside-card">
+      <h2>Préparer votre rendez-vous</h2>
+      <p>Rassemblez les documents utiles (contrats, courriers, décisions, photos) et remplissez notre formulaire : il génère une fiche récapitulative à transmettre à votre interlocuteur.</p>
+      <a class="btn btn-gold" href="formulaire.html">Remplir le formulaire</a>
+      <a class="btn btn-ghost" href="images/Guide.pdf" download>Guide pratique (PDF)</a>
+      <hr>
+      <p style="margin:0">Accueil sur rendez-vous<br>du lundi au vendredi<br>9 h – 12 h · 14 h – 18 h</p>
+    </aside>
+  </div>
+</section>
+<section class="cta-band">
+  <div class="container">
+    <div>
+      <h2>Une question juridique ?</h2>
+      <p>Présentez-nous votre situation : nous vous proposerons un rendez-vous avec l’avocat compétent.</p>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn-gold" href="formulaire.html">Prendre contact</a>
+      <a class="btn btn-ghost" href="tel:+33563200061">05 63 20 00 61</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div>
+      <a class="brand" href="index.html" aria-label="LEVI EGEA &amp; Associés — accueil">
+        <span class="brand-mark" aria-hidden="true">LE</span>
+        <span class="brand-text"><span class="brand-name">Levi Egea &amp; Associés</span><span class="brand-tag">Avocats · Montauban</span></span>
+      </a>
+      <p class="footer-about">L’un des plus anciens cabinets d’avocats de Montauban, au service des particuliers, des professionnels et des institutions.</p>
+    </div>
+    <div>
+      <h2>Compétences</h2>
+      <ul><li><a href="avocat-droit-des-affaires-montauban.html">Droit des affaires</a></li><li><a href="avocat-droit-civil-montauban.html">Droit civil</a></li><li><a href="avocat-droit-commercial-montauban.html">Droit commercial</a></li><li><a href="avocat-droit-de-la-famille-montauban.html">Droit de la famille</a></li><li><a href="avocat-droit-penal-montauban.html">Droit pénal</a></li><li><a href="avocat-droit-du-travail-montauban.html">Droit social</a></li></ul>
+    </div>
+    <div>
+      <h2>Le cabinet</h2>
+      <ul>
+        <li><a href="equipe.html">L’équipe</a></li>
+        <li><a href="dossier.html">Votre premier rendez-vous</a></li>
+        <li><a href="Honoraires.html">Honoraires</a></li>
+        <li><a href="formulaire.html">Formulaire de contact</a></li>
+        <li><a href="images/Guide.pdf">Guide pratique (PDF)</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Nous trouver</h2>
+      <address>
+        LEVI EGEA & Associés<br>20, rue Michelet<br>82000 Montauban<br><br>
+        <a href="tel:+33563200061">05 63 20 00 61</a><br>
+        <a href="mailto:cabinet@slea-avocats.fr">cabinet@slea-avocats.fr</a>
+      </address>
+      <p style="margin-top:1rem">Lundi – vendredi<br>9 h – 12 h · 14 h – 18 h, sur rendez-vous</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© <span id="year">2026</span> LEVI EGEA & Associés — Cabinet d’avocats à Montauban</span>
+      <span><a href="mentions-legales.html">Mentions légales</a> · <a href="contact.html">Contact</a></span>
+    </div>
+  </div>
 </footer>
-
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>
-```
